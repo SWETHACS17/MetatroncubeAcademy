@@ -16,6 +16,46 @@
     }
 }
 
+/* New Topbar Styles */
+.tg-header__top {
+    background-color: #1a73e8;
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+    
+    a {
+        color: white;
+    }
+    
+    @media #{$xs} {
+        padding: 10px 0;
+    }
+}
+
+.tg-header__top-info,
+.tg-header__top-social {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    @media #{$xs} {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.tg-header__top-social {
+    justify-content: flex-end;
+    
+    @media #{$xs} {
+        justify-content: center;
+    }
+}
+
+/* Existing Styles */
 .tgmenu__navbar-wrap {
     flex-grow: 1;
     .navigation {
@@ -267,6 +307,25 @@
         // Hide submenus for all except courses
         &:not(:nth-child(3)) > .sub-menu {
             display: none !important;
+        }
+    }
+}
+
+// Mobile menu social links
+.social-links {
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    
+    .list-wrap {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        
+        a {
+            color: white;
         }
     }
 }
