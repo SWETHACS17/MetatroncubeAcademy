@@ -37,8 +37,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                         </div>
                     </div>
                 </div>
-
-                {/* Existing Header Content */}
+                {/*Header Content */}
                 <div id="sticky-header" className={`tg-header__area transparent-header ${scroll ? "sticky-menu" : ""}`}>
                     <div className="container custom-container">
                         <div className="row">
