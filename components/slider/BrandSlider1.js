@@ -7,83 +7,72 @@ const settings = {
     speed: 600,
     autoplay: true,
     arrows: false,
-    slidesToShow: 6,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 1200,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 992,
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 767,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1,
-                arrows: false,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
             }
         },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
-                arrows: false,
+                slidesToScroll: 1
             }
         },
     ]
 }
 
+const imageStyle = {
+    width: "200px",        // default for laptop/desktop
+    height: "auto",
+    objectFit: "contain",
+    transition: "transform 0.3s ease"
+}
+
+// Use media query with inline `style` by adjusting dynamically if needed — or go with Tailwind if available
+
 export default function BrandSlider1() {
     return (
-        <>
-            <Slider {...settings} className="row brand-active">
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand01.png" alt="brand" /></Link>
-                    </div>
+        <Slider {...settings} className="brand-active">
+            {["brand01", "brand02", "brand03", "brand04", "brand05"].map((brand, i) => (
+                <div
+                    className="brand__item"
+                    key={i}
+                    style={{
+                        padding: "20px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}
+                >
+                    <Link href="#">
+                        <img
+                            src={`/assets/img/brand/${brand}.png`}
+                            alt="brand"
+                            style={imageStyle}
+                        />
+                    </Link>
                 </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand02.png" alt="brand" /></Link>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand03.png" alt="brand" /></Link>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand04.png" alt="brand" /></Link>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand05.png" alt="brand" /></Link>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand06.png" alt="brand" /></Link>
-                    </div>
-                </div>
-                <div className="col">
-                    <div className="brand__item">
-                        <Link href="#"><img src="/assets/img/brand/brand07.png" alt="brand" /></Link>
-                    </div>
-                </div>
-            </Slider>
-        </>
+            ))}
+        </Slider>
     )
 }

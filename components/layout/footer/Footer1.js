@@ -10,8 +10,8 @@ export default function Footer1() {
                             <div className="col-xl-3 col-lg-4 col-sm-6">
                                 <div className="footer-widget">
                                     <div className="footer__about">
-                                        <div className="footer__logo logo">
-                                            <Link href="/"><img src="/assets/img/logo/secondary_logo.png" alt="img" /></Link>
+                                        <div className="footer__logo logo h-20 w-20">
+                                            <Link href="/"><img className="h-20 w-20" src="/assets/img/logo/secondary_logo.png" alt="img" /></Link>
                                         </div>
                                         <p>when an unknown printer took galley of type and scrambled it to make pspecimen bookt
                                             has.</p>
