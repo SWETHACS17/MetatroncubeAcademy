@@ -10856,6 +10856,7 @@ blockquote p {
 }
 
 .copyright__wrapper {
+    text-align: center;
     border-top: 1px solid #2A4774;
     padding: 30px 0;
 }
@@ -10866,10 +10867,14 @@ blockquote p {
     }
 }
 
+.socials {
+    font-size: 16.5px;
+}
+
 .copyright__text p {
     text-transform: capitalize;
     color: #8798B3;
-    font-size: 15px;
+    font-size: 13.5px;
     font-family: var(--tg-heading-font-family);
     margin: 0 0;
 }
