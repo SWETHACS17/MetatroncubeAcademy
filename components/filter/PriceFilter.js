@@ -14,22 +14,7 @@ const PriceFilter = () => {
 
     return (
         <ul className="list-wrap">
-            {price?.map((item) => (
-                <li key={item.id}>
-                    <div className="form-check">
-                        <label className="form-check-label">
-                            <input
-                                className="form-check-input"
-                                type="checkbox"
-                                value={item.value}
-                                checked={item.isChecked}
-                                onChange={(e) => priceHandler(e, item.id)}
-                            />
-                            {item.name}
-                        </label>
-                    </div>
-                </li>
-            ))}
+            
         </ul>
     )
 }
