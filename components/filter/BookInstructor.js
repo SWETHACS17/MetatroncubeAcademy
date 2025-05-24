@@ -14,21 +14,7 @@ const BookInstructor = () => {
 
     return (
         <ul className="list-wrap">
-            {instructors?.map((item) => (
-                <li key={item.id}>
-                    <div className="form-check">
-                        <label className="form-check-label">
-                            <input className="form-check-input"
-                                type="checkbox"
-                                checked={item.isChecked}
-                                value={item.value}
-                                onChange={(e) => instructorHandler(e, item.id)}
-                            />
-                            {item.name}
-                        </label>
-                    </div>
-                </li>
-            ))}
+           
         </ul>
     )
 }

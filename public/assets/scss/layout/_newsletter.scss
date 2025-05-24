@@ -1,73 +1,164 @@
-@use '../utils' as *;
+@use './utils' as *;
 
 /*=============================
     21. Newsletter
 ===============================*/
-.section-py-55 {
-    padding: 55px 0;
-}
 .newsletter {
-    &__img {
-        max-width: 286px;
-        &-wrap {
-            @include flexbox();
+    &-area {
+        padding: 80px 0;
+        background: #f5f7ff !important; // Ensure the background applies
+
+        & .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        & .row {
+            display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            @media #{$lg} {
-                flex-direction: column-reverse;
-                gap: 20px;
+            justify-content: center;
+            margin: 0 -15px;
+
+            & .col-xl-6 {
+                width: 50%;
+                padding: 0 15px;
+
+                @media (max-width: 1199px) {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
             }
-            @media #{$md} {
-                flex-direction: row;
-                margin: 0 0 30px;
-            }
-            @media #{$xs} {
-                flex-direction: column;
-                text-align: center;
+
+            @media (max-width: 991px) {
+                & .col-lg-5,
+                & .col-lg-7 {
+                    width: 100%;
+                }
             }
         }
     }
-    &__content {
-        margin-left: 10px;
-        flex-grow: 1;
-        @media #{$lg} {
-            margin: 0 0;
-        }
-        & .title {
-            font-size: 30px;
-            margin: 0 0;
+
+    &__img-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .newsletter__img {
+            flex-shrink: 0;
+
+            & img {
+                max-width: 400px !important; // Increased further to ensure the change is noticeable
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            @media (max-width: 767px) {
+                & img {
+                    max-width: 300px !important; // Increased for smaller screens
+                }
+            }
         }
     }
+
     &__form {
-        position: relative;
-        & [type=email] {
-            display: block;
-            width: 100%;
-            background: var(--tg-common-color-gray);
-            border: 1px solid #D0DFF7;
-            @include border-radius(50px);
-            padding: 15px 200px 15px 28px;
-            @media #{$xs} {
-                padding: 15px 180px 15px 28px;
-            }
+        background: transparent !important; // Ensure no background or shadow
+        padding: 0 !important; // Remove padding
+        max-width: 500px;
+        margin: 0 auto;
+
+        @media (max-width: 767px) {
+            padding: 0 !important;
         }
-        & [type=submit] {
-            position: absolute;
-            top: 50%;
-            right: 6px;
-            @include transform(translateY(-50%));
-            border: none;
-            padding: 12px 30px;
-            height: 50px;
-            text-transform: uppercase;
-            background: var(--tg-theme-primary);
-            color: var(--tg-common-color-white);
-            font-weight: var(--tg-fw-semi-bold);
-            @include border-radius(50px);
-            @media #{$xs} {
-                padding: 12px 25px;
-            }
-            &:hover {
-                background: var(--tg-theme-secondary);
+
+        & .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #002766;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        & form {
+            display: flex;
+            flex-direction: column;
+
+            & .newsletter__form-content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                & .form-group {
+                    display: flex;
+                    flex-direction: column;
+
+                    & p {
+                        margin-bottom: 5px !important; // Reduce the gap between the text and the input field
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        color: #002766;
+                    }
+
+                    & input,
+                    & textarea {
+                        width: 100%;
+                        padding: 12px 15px;
+                        border: 1px solid #e0e0e0;
+                        border-radius: 25px;
+                        font-size: 0.9rem;
+                        transition: all 0.3s ease;
+                        background: #fff;
+                        color: #333;
+
+                        &::placeholder {
+                            color: #666;
+                            opacity: 1;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            border-color: #0057d8;
+                            box-shadow: 0 0 0 3px rgba(0, 87, 216, 0.1);
+                        }
+                    }
+
+                    & textarea {
+                        min-height: 120px;
+                        width: 1000px !important; // Ensure the textarea is wider
+                        resize: vertical;
+                        border-radius: 15px;
+                    }
+                }
+
+                & .form-submit {
+                    display: flex;
+                    justify-content: center !important; // Center the button
+                    margin-top: 20px !important; // Add more spacing to ensure it’s below the form
+
+                    & .submit-btn {
+                        width: 80px !important; // Increased size to make the square more noticeable
+                        height: 80px !important; // Square shape
+                        background-color: #0057d8 !important; // Ensure the color applies
+                        color: white !important;
+                        font-size: 1rem !important;
+                        font-weight: 600 !important;
+                        border: none !important;
+                        border-radius: 0 !important; // Square shape
+                        cursor: pointer !important;
+                        text-transform: uppercase !important;
+                        letter-spacing: 1px !important;
+                        transition: background-color 0.3s ease !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+
+                        &:hover {
+                            background-color: #0041a8 !important; // Darker blue on hover
+                        }
+                    }
+                }
             }
         }
     }
