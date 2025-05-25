@@ -4,22 +4,22 @@ import Link from "next/link"
 export default function Contact() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Contact With Us">
+            <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Contact">
                 <div>
                     <section className="contact-area section-py-120">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5">
                                     <div className="contact-info-wrap">
-                                        <h2 className="title">Keep In Touch With Us</h2>
-                                        <p>Neque convallis cras semper auctor. Libero id faucibus getnvallis.id faucibus nisl tincidunt egetnvallis.</p>
+                                        <h2 className="title">Let’s Connect & Build Your Future Together</h2>
+                                        <p>Have questions or need guidance? Our team is here to help!</p>
                                         <ul className="list-wrap">
                                             <li>
                                                 <div className="icon">
                                                     <i className="flaticon-pin-1" />
                                                 </div>
                                                 <div className="content">
-                                                    <p>68 Street Holakt Street world <br /> 10002 New York</p>
+                                                    <p>Waterloo, Canada</p>
                                                 </div>
                                             </li>
                                             <li>
@@ -27,8 +27,8 @@ export default function Contact() {
                                                     <i className="flaticon-phone-call" />
                                                 </div>
                                                 <div className="content">
-                                                    <Link href="tel:0123456789">+123 555 69090</Link>
-                                                    <Link href="tel:0123456789">+123 555 69090</Link>
+                                                    <Link href="tel:0123456789">+1-647-679-7651</Link>
+                                                    
                                                 </div>
                                             </li>
                                             <li>
@@ -36,8 +36,8 @@ export default function Contact() {
                                                     <i className="flaticon-email" />
                                                 </div>
                                                 <div className="content">
-                                                    <Link href="mailto:info@gmail.com">info@gmail.com</Link>
-                                                    <Link href="mailto:info@gmail.com">info@gmail.com</Link>
+                                                    <Link href="mailto:info@gmail.com">info@metatroncubeacademy.com</Link>
+                                                   
                                                 </div>
                                             </li>
                                         </ul>
@@ -72,6 +72,15 @@ export default function Contact() {
                                             <div className="form-grp">
                                                 <textarea name="message" placeholder="Message" required />
                                             </div>
+                                            
+
+                                            <div className="col-md-6">
+                                                    <div className="form-grp">
+                                                        <input name="name" type="text" placeholder="30 - 10 *" required />
+                                                    </div>
+                                                </div>
+
+
                                             <button type="submit" className="btn">Send Message</button>
                                         </form>
                                         <p className="ajax-response mb-0" />
