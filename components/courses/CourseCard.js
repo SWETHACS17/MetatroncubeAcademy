@@ -12,9 +12,9 @@ const CourseCard = ({ item }) => {
                     </div>
                 </div>
                 <div className="courses__item-two-content">
-                    <Link href="#" className="courses__item-tag" style={{ backgroundColor: '#E8F9EF', color: '#04BC53' }}>Graphic Design</Link>
+                    <Link href="#" className="courses__item-tag" style={{ backgroundColor: '#E8F9EF', color: '#04BC53' }}>E-Commer</Link>
                     <h5 className="title"><Link href={`/course/${item.id}`}>Bigener Adobe Illustrator for
-                        Graphic Design</Link></h5>
+                       E-Commerce</Link></h5>
                     <ul className="courses__item-meta list-wrap">
                         <li><i className="flaticon-file" /> 05</li>
                         <li><i className="flaticon-timer" /> 12h 30m</li>
@@ -22,7 +22,7 @@ const CourseCard = ({ item }) => {
                     </ul>
                     <div className="courses__item-bottom">
                         <div className="course__price">
-                            <h3 className="price">$29.00</h3>
+                            <h3 className="price"></h3>
                         </div>
                         <div className="courses__item-rating">
                             <i className="fas fa-star" />

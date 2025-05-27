@@ -63,8 +63,7 @@ export default function TestimonialSlider1() {
                 <div className="col-lg-7">
                     <div className="testimonial__content-wrapper">
                         <div className="section__title white-title mb-40">
-                            <h2 className="title tg-svg">What Our <span className="position-relative"><span className="svg-icon" id="svg-7" data-svg-icon="assets/img/icons/title_shape.svg" />Students</span><br />
-                                Say About Us</h2>
+                            <h2 className="title tg-svg">Why <span className="position-relative"><span className="svg-icon" id="svg-7" data-svg-icon="assets/img/icons/title_shape.svg" />Choose Us!</span><br /></h2>
                         </div>
                         <Slider
                             {...settings2}
@@ -75,28 +74,10 @@ export default function TestimonialSlider1() {
                             focusOnSelect={true}
                             className="testimonial__content-active testimonial__content-nav">
                             <div className="testimonial__content-item">
-                                <div className="testimonial__content-icon">
-                                    <img src="/assets/img/icons/quote.png" alt="img" />
-                                </div>
-                                <p>“ when an unknown printer took a galley of type and scrambled to make a type
-                                    specimen book. It has survived not only five centuries, but also the leap into
-                                    electronic.”</p>
-                                <div className="testimonial__content-avatar">
-                                    <h5 className="name">Parker Robert</h5>
-                                    <span className="designation">UI Designer</span>
-                                </div>
-                            </div>
-                            <div className="testimonial__content-item">
-                                <div className="testimonial__content-icon">
-                                    <img src="/assets/img/icons/quote.png" alt="img" />
-                                </div>
-                                <p>“ when an unknown printer took a galley of type and scrambled to make a type
-                                    specimen book. It has survived not only five centuries, but also the leap into
-                                    electronic.”</p>
-                                <div className="testimonial__content-avatar">
-                                    <h5 className="name">Parker Robert</h5>
-                                    <span className="designation">UI Designer</span>
-                                </div>
+                                <p><p>✓ Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.</p>
+                                <p>✓ Practical Hands-On Training: Gain real-world experience with live projects.</p>
+                                <p>✓ Expert Mentors: Get trained by professionals with years of industry experience.</p>
+                                <p>✓ Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p></p>
                             </div>
                         </Slider>
                     </div>

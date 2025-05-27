@@ -1,74 +1,42 @@
 [
     {
         "id": 1,
-        "title": "When aeunkno printer took galley of scrambled",
+        "title": "Why Digital Marketing Is the Most In-Demand Skill in 2025 | Metatron Cube Academy",
         "img": "blog_thumb01.jpg",
-        "category": "EDUCATION",
-        "author": "Admin",
-        "date": "25 April 2023"
+        "category": "DIGITAL MARKETING",
+        "author": "By Team Metatroncube Academy",
+        "date": "April 1, 2025"
     },
     {
         "id": 2,
-        "title": "Full Stack GraphQL With Next.js And Vercel",
+        "title": "How to Start a Digital Marketing Career with Zero Experience",
         "img": "blog_thumb02.jpg",
-        "category": "COURSE",
-        "author": "Admin",
-        "date": "25 April 2023"
+        "category": "DIGITAL MARKETING",
+        "author": "By Team Metatroncube Academy",
+        "date": "March 26, 2025"
     },
     {
         "id": 3,
         "title": "What Leonardo Teach us About Web Design",
         "img": "blog_thumb03.jpg",
-        "category": "SKILL DEVELOPMENT",
-        "author": "Admin",
-        "date": "25 April 2023"
+        "category": "ART & DESIGN",
+        "author": "By Team Metatroncube Academy",
+        "date": "February 22, 2025"
     },
     {
         "id": 4,
-        "title": "When aeunkno printer took galley of scrambled",
+        "title": "Full Stack GraphQL With Next.js And Vercel",
         "img": "blog_thumb04.jpg",
-        "category": "Tech",
-        "author": "Admin",
-        "date": "25 April 2023"
+        "category": "Development",
+        "author": "By Team Metatroncube Academy",
+        "date": "February 22, 2025"
     },
     {
         "id": 5,
-        "title": "Full Stack GraphQL With Next.js And Vercel",
+        "title": "The Potentially Dangerous Cookie",
         "img": "blog_thumb05.jpg",
-        "category": "EDUCATION",
-        "author": "Admin",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 6,
-        "title": "What Leonardo Teach us About Web Design",
-        "img": "blog_thumb06.jpg",
-        "category": "COURSE",
-        "author": "Admin",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 7,
-        "title": "When aeunkno printer took galley of scrambled",
-        "img": "blog_thumb07.jpg",
-        "category": "SKILL DEVELOPMENT",
-        "author": "Admin",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 8,
-        "title": "Full Stack GraphQL With Next.js And Vercel",
-        "img": "blog_thumb08.jpg",
-        "category": "Tech",
-        "author": "Admin",
-        "date": "25 April 2023"
-    },
-    {
-        "id": 9,
-        "title": "What Leonardo Teach us About Web Design",
-        "img": "blog_thumb09.jpg",
-        "category": "Tech",
-        "author": "Admin",
-        "date": "25 April 2023"
+        "category": "ART & DESIGN",
+        "author": "By Team Metatroncube Academy",
+        "date": "February 22, 2025"
     }
 ]

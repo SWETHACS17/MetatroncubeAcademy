@@ -35,9 +35,10 @@ export default function TestimonalSlider2() {
                         <i className="fas fa-star" />
                         <i className="fas fa-star" />
                     </div>
-                    <p>“ when an unknown printer took a galley type and scrambled atype specimen
-                        book. It has survived not centuries leapelectronic types essentially
-                        unchanged. “</p>
+                    <p>Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.
+                      Practical Hands-On Training: Gain real-world experience with live projects.
+                      Expert Mentors: Get trained by professionals with years of industry experience.
+                      Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p>
                     <div className="testimonial__avatar">
                         <h4 className="name">Parker Robert</h4>
                         <span className="designation">UI Designer</span>
@@ -54,9 +55,10 @@ export default function TestimonalSlider2() {
                         <i className="fas fa-star" />
                         <i className="fas fa-star" />
                     </div>
-                    <p>“ when an unknown printer took a galley type and scrambled atype specimen
-                        book. It has survived not centuries leapelectronic types essentially
-                        unchanged. “</p>
+                    <p>Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.
+                      Practical Hands-On Training: Gain real-world experience with live projects.
+                      Expert Mentors: Get trained by professionals with years of industry experience.
+                      Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p>
                     <div className="testimonial__avatar">
                         <h4 className="name">Harry Protar</h4>
                         <span className="designation">Web Designer</span>

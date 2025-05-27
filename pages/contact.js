@@ -1,9 +1,11 @@
+import Header1 from "@/components/layout/header/Header1"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 
 export default function Contact() {
     return (
-        <>
+        <>  
+       
             <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="Contact">
                 <div>
                     <section className="contact-area section-py-120">

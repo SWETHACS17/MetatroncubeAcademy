@@ -15,28 +15,33 @@ export default function Newsletter1() {
                             <form action="#">
                                 <div className="newsletter__form-content">
                                     <div className="form-group">
-                                        <p>Your Name</p>
-                                        <input type="text" id="name" placeholder="" required />
-                                    </div>
+                                        <p>Name</p>
+                                        <input type="text" id="name" placeholder="Your Name" required />
+                                    </div> <br />
                                     <div className="form-group">
-                                        <p>Your Email</p>
-                                        <input type="text" id="email" placeholder="" required />
-                                    </div>
+                                        <p>Email</p>
+                                        <input type="text" id="email" placeholder="Your email" required />
+                                    </div><br />
                                     <div className="form-group">
                                         <p>Phone Number</p>
                                         <input type="tel" id="phone" placeholder="" />
-                                    </div>
+                                    </div><br />
                                     <div className="form-group">
                                         <p>Your Message</p>
                                         <textarea id="message" rows="4" placeholder="" required></textarea>
-                                    </div>
+                                    </div><br />
                                     <div className="form-group">
                                         <p>20-5=?</p>
                                         <input type="text" id="captcha" placeholder="" required />
-                                    </div>
+                                    </div><br />
+
+                                    {/*
                                     <div className="form-submit">
                                         <button type="submit" className="submit-btn">SUBMIT</button>
                                     </div>
+
+                                    */}
+                                    
                                 </div>
                             </form>
                         </div>

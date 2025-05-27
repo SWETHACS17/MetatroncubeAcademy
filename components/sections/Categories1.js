@@ -9,12 +9,11 @@ export default function Categories1() {
                         <div className="col-xl-5 col-lg-8 col-md-10">
                             <div className="categories__title-wrap text-center text-xl-start">
                                 <div className="section__title">
-                                    <span className="sub-title">Unique online courses</span>
-                                    <h2 className="title tg-svg">Browse By <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" />Categories</span>
+                                    <span className="sub-title">Learn Different, Stand Out!</span>
+                                    <h2 className="title tg-svg">Explore Our <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" />Categories!</span>
                                     </h2>
                                 </div>
-                                <p>Borem ipsum dolor sit amet, consectetur adipiscing eliawe awut elit ellus, luctus nec
-                                    ullamcorper mattisBorem ipsum dolor awes atnse awctetur.</p>
+                                <p>Are you ready to master the art of digital marketing? Our course covers all the essential elements of online marketing, giving you the skills and confidence to create, implement, and manage successful campaigns. From SEO to social media marketing and everything in between, our curriculum is designed to provide you with a 360-degree understanding of the digital marketing world.</p>
                                 <div className="tg-button-wrap justify-content-center justify-content-xl-start">
                                     <Link href="/courses" className="btn btn-border tg-svg"><span className="text">All
                                         Categories</span> <span className="svg-icon" id="svg-6" data-svg-icon="assets/img/icons/btn-arrow.svg" /></Link>
@@ -31,7 +30,6 @@ export default function Categories1() {
                                             <Link href="/courses">
                                                 <i className="flaticon-graphic-design" />
                                                 <span className="name">Graphic Design</span>
-                                                <span className="courses">19 Courses</span>
                                             </Link>
                                         </div>
                                     </div>
@@ -39,8 +37,7 @@ export default function Categories1() {
                                         <div className="categories__item">
                                             <Link href="/courses">
                                                 <i className="flaticon-email-marketing" />
-                                                <span className="name">Marketing</span>
-                                                <span className="courses">10 Courses</span>
+                                                <span className="name">Digital Marketing</span>
                                             </Link>
                                         </div>
                                     </div>
@@ -50,8 +47,7 @@ export default function Categories1() {
                                         <div className="categories__item">
                                             <Link href="/courses">
                                                 <i className="flaticon-bars" />
-                                                <span className="name">Fiance</span>
-                                                <span className="courses">08 Courses</span>
+                                                <span className="name">E-commerce Development</span>
                                             </Link>
                                         </div>
                                     </div>
@@ -59,8 +55,8 @@ export default function Categories1() {
                                         <div className="categories__item">
                                             <Link href="/courses">
                                                 <i className="flaticon-programming-language" />
-                                                <span className="name">Development</span>
-                                                <span className="courses">13 Courses</span>
+                                                <span className="name">Video <br></br> Editing
+                                                </span>
                                             </Link>
                                         </div>
                                     </div>
@@ -68,8 +64,7 @@ export default function Categories1() {
                                         <div className="categories__item">
                                             <Link href="/courses">
                                                 <i className="flaticon-atom" />
-                                                <span className="name">Science</span>
-                                                <span className="courses">19 Courses</span>
+                                                <span className="name">Web Development</span>
                                             </Link>
                                         </div>
                                     </div>

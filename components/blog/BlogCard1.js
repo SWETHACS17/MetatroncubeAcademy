@@ -12,8 +12,8 @@ export default function BlogCard1({ item }) {
                         <Link href="#" className="cat">{item.category}</Link>
                         <h4 className="title"><Link href={`/blog/${item.id}`}>{item.title}</Link></h4>
                         <ul className="list-wrap blog__post-meta">
-                            <li><i className="flaticon-account" /> by <Link href="#">{item.author}</Link></li>
-                            <li><i className="flaticon-calendar-date" /> 23 Aug, 2023</li>
+                            <li><i className="flaticon-account" /> by <Link href="#">Team Metatroncube Academy</Link></li>
+                            <li><i className="flaticon-calendar-date" />April 1, 2025</li>
                         </ul>
                     </div>
                 </div>

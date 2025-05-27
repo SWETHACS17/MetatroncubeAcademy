@@ -1,4 +1,4 @@
-@use './utils' as *;
+@use '../utils' as *;
 
 /*=============================
     21. Newsletter
@@ -6,7 +6,7 @@
 .newsletter {
     &-area {
         padding: 80px 0;
-        background: #f5f7ff !important; // Ensure the background applies
+        background: #fff;
 
         & .container {
             max-width: 1200px;
@@ -20,58 +20,79 @@
             align-items: center;
             justify-content: center;
             margin: 0 -15px;
+        }
 
-            & .col-xl-6 {
-                width: 50%;
-                padding: 0 15px;
+        & .col-xl-6 {
+            width: 50%;
+            padding: 0 15px;
 
-                @media (max-width: 1199px) {
-                    width: 100%;
-                    margin-bottom: 30px;
-                }
+            @media (max-width: 1199px) {
+                width: 100%;
+                margin-bottom: 30px;
             }
+        }
 
-            @media (max-width: 991px) {
-                & .col-lg-5,
-                & .col-lg-7 {
-                    width: 100%;
-                }
+        @media (max-width: 1000px) {
+            .col-lg-5,
+            .col-lg-7 {
+                width: 100%;
             }
         }
     }
 
-    &__img-wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &__img {
+        &-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        & .newsletter__img {
-            flex-shrink: 0;
+            & .newsletter__img {
+                flex-shrink: 0;
 
-            & img {
-                max-width: 400px !important; // Increased further to ensure the change is noticeable
-                height: auto;
-                border-radius: 8px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            }
-
-            @media (max-width: 767px) {
                 & img {
-                    max-width: 300px !important; // Increased for smaller screens
+                    max-width: 5000px;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            @media (max-width: 867px) {       
+                & .newsletter__img {
+                    & img {
+                        max-width: 500px;
+                    }
                 }
             }
         }
     }
-
+     & .form-submit {
+                margin-top: 20px;
+                width: 100%;
+                
+                & .submit-btn {
+                    width: 100%;
+                    padding: 12px;
+                    background-color: #0057d8;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: background-color 0.3s ease;
+                    
+                    &:hover {
+                        background-color: #003f9a;
+                    }
+                }
+            }
     &__form {
-        background: transparent !important; // Ensure no background or shadow
-        padding: 0 !important; // Remove padding
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 5px 60px rgba(0, 0, 0, 0.1);
         max-width: 500px;
         margin: 0 auto;
-
-        @media (max-width: 767px) {
-            padding: 0 !important;
-        }
 
         & .section-title {
             font-size: 28px;
@@ -81,82 +102,74 @@
             text-align: left;
         }
 
+        @media (max-width: 767px) {
+            padding: 200px;
+        }
+
         & form {
             display: flex;
             flex-direction: column;
+            gap: 15px;
 
-            & .newsletter__form-content {
+            & .form-group {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
 
-                & .form-group {
-                    display: flex;
-                    flex-direction: column;
+                & label {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                    color: #002766;
+                }
 
-                    & p {
-                        margin-bottom: 5px !important; // Reduce the gap between the text and the input field
-                        font-size: 0.9rem;
-                        font-weight: 600;
-                        color: #002766;
-                    }
+                & input,
+                & textarea {
+                   width: 100%;
+                    padding: 12px 20px;  // Increased padding for better appearance
+                    border: 1px solid #e0e0e0;
+                    border-radius: 6px;
+                    font-size: 0.9rem;
+                    transition: all 0.3s ease;
+                    background: #fff;
 
-                    & input,
-                    & textarea {
-                        width: 100%;
-                        padding: 12px 15px;
-                        border: 1px solid #e0e0e0;
-                        border-radius: 25px;
-                        font-size: 0.9rem;
-                        transition: all 0.3s ease;
-                        background: #fff;
-                        color: #333;
-
-                        &::placeholder {
-                            color: #666;
-                            opacity: 1;
-                        }
-
-                        &:focus {
-                            outline: none;
-                            border-color: #0057d8;
-                            box-shadow: 0 0 0 3px rgba(0, 87, 216, 0.1);
-                        }
-                    }
-
-                    & textarea {
-                        min-height: 120px;
-                        width: 1000px !important; // Ensure the textarea is wider
-                        resize: vertical;
-                        border-radius: 15px;
+                    &:focus {
+                        outline: none;
+                        border-color: #0057d8;
+                        box-shadow: 0 0 0 3px rgba(0, 87, 216, 0.1);
                     }
                 }
 
-                & .form-submit {
+                & textarea {
+                    min-height: 120px;  // Increased height
+                    resize: vertical;
+                }
+            }
+
+            & .email-group {
+                position: relative;
+
+                & .email-input-wrapper {
                     display: flex;
-                    justify-content: center !important; // Center the button
-                    margin-top: 20px !important; // Add more spacing to ensure it’s below the form
+                    align-items: center;
+                    background: #e6f0fa;
+                    border-radius: 30px;
+                    overflow: hidden;
 
-                    & .submit-btn {
-                        width: 80px !important; // Increased size to make the square more noticeable
-                        height: 80px !important; // Square shape
-                        background-color: #0057d8 !important; // Ensure the color applies
-                        color: white !important;
-                        font-size: 1rem !important;
-                        font-weight: 600 !important;
-                        border: none !important;
-                        border-radius: 0 !important; // Square shape
-                        cursor: pointer !important;
-                        text-transform: uppercase !important;
-                        letter-spacing: 1px !important;
-                        transition: background-color 0.3s ease !important;
-                        display: flex !important;
-                        align-items: center !important;
-                        justify-content: center !important;
+                    & input {
+                        flex: 1;
+                        border: none;
+                        background: transparent;
+                        padding: 12px 20px;
+                        border-radius: 30px 0 0 30px;
 
-                        &:hover {
-                            background-color: #0041a8 !important; // Darker blue on hover
+                        &:focus {
+                            border: none;
+                            box-shadow: none;
                         }
+                    }
+
+                    & button:hover {
+                        background-color: #003f9a;
                     }
                 }
             }

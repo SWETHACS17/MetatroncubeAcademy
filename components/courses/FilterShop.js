@@ -4,8 +4,7 @@ import BookLanguageFilter from "../filter/BookLanguageFilter"
 
 const FilterShop = () => {
     return (
-        <>
-            
+        <>      
         </>
     )
 }
