@@ -33,10 +33,10 @@ export default function AboutUs() {
                                 <div className="col-xl-7 col-lg-6 col-md-11">
                                     <div className="about__images-wrap">
                                         <div className="column">
-                                            <img src="/assets/img/others/about_img03.jpg" alt="img" />
+                                            <img src="/assets/img/others/about_img03.avif" alt="img" />
                                         </div>
                                         <div className="column">
-                                            <img src="/assets/img/others/about_img04.jpg" alt="img" />
+                                            <img src="/assets/img/others/about_img04.png" alt="img" />
                                             <img src="/assets/img/others/about_img05.jpg" alt="img" />
                                         </div>
                                         <div className="about__shapes">
@@ -55,25 +55,29 @@ export default function AboutUs() {
         <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
                 <div className="row gx-4">
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <div className="vision-card h-100 p-4 p-lg-5 text-center" 
+                    <div className="col-md-6 mb-4 mb-md-">
+                        <div className="vision-card h-190 p-5 p-lg-5 text-center" 
                              style={{
                                  backgroundColor: 'rgba(9, 35, 111, 0.9)',
                                  borderRadius: '10px',
                                  color: 'white',
-                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)'
+                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                 width: '100%',
+                                 height: '270px',
                              }}>
                             <h2 className="mb-3 position-relative pb-3  text-white">Our Vision</h2>
                             <p className="mb-0  text-white">To create industry-ready professionals through innovative learning.</p>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div className="mission-card h-100 p-4 p-lg-5 text-center" 
+                        <div className="mission-card h-190 p-5 p-lg-5 text-center" 
                              style={{
                                  backgroundColor: 'rgb(9, 35, 111, 0.9)',
                                  borderRadius: '10px',
                                  color: 'white',
-                                 boxShadow: '0 10px 30px rgba(255, 254, 254, 0.2)'
+                                 boxShadow: '0 10px 30px rgba(255, 254, 254, 0.2)',
+                                 width: '100%',
+                                 height: '270px',
                              }}>
                             <h2 className="mb-3 position-relative pb-3 text-white">Our Mission</h2>
                             <p className="mb-0 text-white">To equip learners with practical skills that drive success in the digital world.</p>
@@ -121,7 +125,7 @@ export default function AboutUs() {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
-                                <img src="/assets/img/others/what_makes_us_different.png" alt="img" className="img-fluid" />
+                                <img src="/assets/img/others/what_makes_us_different.png" alt="img" className="img-fluid " style={{ height: "370px", width: "520px" }} />
                             </div>
                             <div className="col-lg-6">
                                 <div className="section__title">

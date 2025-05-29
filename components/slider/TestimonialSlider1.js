@@ -45,25 +45,20 @@ export default function TestimonialSlider1() {
             <div className="row align-items-xl-center">
                 <div className="col-lg-5 col-md-7 col-sm-9">
                     <div className="testimonial__image-wrapper position-relative">
-                        <Slider {...settings1} asNavFor={nav2} ref={slider1Ref} className="testimonial__image-active">
-                            <div className="testimonial__image-item">
-                                <img src="/assets/img/others/testimonial01.jpg" alt="img" />
+                        <Slider {...settings1} asNavFor={nav2} ref={slider1Ref}>
+                            <div>
+                                <img src="/assets/img/others/testimonial01.png" alt="img" />
                             </div>
-                            <div className="testimonial__image-item">
-                                <img src="/assets/img/others/testimonial02.jpg" alt="img" />
+                            <div >
+                                <img src="/assets/img/others/testimonial01.png" alt="img" />
                             </div>
                         </Slider>
-                        <div className="testimonial__shapes">
-                            <img src="/assets/img/objects/testi_shape01.svg" alt="shape" data-aos="fade-up-left" data-aos-delay={300} />
-                            <img src="/assets/img/objects/testi_shape02.svg" alt="shape" data-aos="fade-up-right" data-aos-delay={300} />
-                            <img src="/assets/img/objects/testi_shape03.svg" alt="shape" className="rotateme" />
-                        </div>
                     </div>
                 </div>
                 <div className="col-lg-7">
                     <div className="testimonial__content-wrapper">
-                        <div className="section__title white-title mb-40">
-                            <h2 className="title tg-svg">Why <span className="position-relative"><span className="svg-icon" id="svg-7" data-svg-icon="assets/img/icons/title_shape.svg" />Choose Us!</span><br /></h2>
+                                  <div className="section__title">
+                            <span className="sub-title">Metatroncube Academy</span><h2 className="title tg-svg text-white">why <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" /> Choose Us!</span></h2>
                         </div>
                         <Slider
                             {...settings2}
