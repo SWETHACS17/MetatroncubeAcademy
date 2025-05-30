@@ -19,7 +19,6 @@ export default function Home1() {
                 <Course1 />
                 <Categories1 />
                 <Testimonial1 />
-               
                 <Cta1 />
                 <Blog1 />
                 <Newsletter1 />
