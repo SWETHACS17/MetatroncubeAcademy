@@ -69,10 +69,10 @@ export default function TestimonialSlider1() {
                             focusOnSelect={true}
                             className="testimonial__content-active testimonial__content-nav">
                             <div className="testimonial__content-item">
-                                <p><p>✓ Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.</p>
-                                <p>✓ Practical Hands-On Training: Gain real-world experience with live projects.</p>
-                                <p>✓ Expert Mentors: Get trained by professionals with years of industry experience.</p>
-                                <p>✓ Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p></p>
+                                <p><p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Practical Hands-On Training: Gain real-world experience with live projects.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Expert Mentors: Get trained by professionals with years of industry experience.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p></p>
                             </div>
                         </Slider>
                     </div>

@@ -31,7 +31,7 @@ export default function About1() {
                                 </div>
                                 <p className="desc">Welcome to Metatron Cube Academy – your gateway to mastering the most in-demand digital skills! We offer expert-led, hands-on training in Web Development, Graphic Design, Video Editing, E-commerce Development, and Digital Marketing. Whether you’re a student, freelancer, or entrepreneur, our courses are designed to help you gain real-world expertise and accelerate your career growth.</p>
                                 <div className="tg-button-wrap">
-                                    <Link href="/about-us" className="btn tg-svg"><span className="text">DIVE DEEPER</span> <span className="svg-icon" id="about-btn" data-svg-icon="assets/img/icons/btn-arrow.svg" /></Link>
+                                    <Link href="/about-us" className="btn tg-svg"><span className="text">DIVE DEEPER  →</span> <span className="svg-icon" id="about-btn" data-svg-icon="assets/img/icons/btn-arrow.svg" /></Link>
                                 </div>
                             </div>
                         </div>

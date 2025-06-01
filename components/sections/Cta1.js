@@ -48,9 +48,9 @@ const Cta1 = () => {
 
           <h3 className="subheading">What Will You Gain</h3>
           <ul className="points">
-            <li>In-depth knowledge of cutting-edge digital tools.</li>
-            <li>Real-world projects to build a strong portfolio.</li>
-            <li>Flexible learning with step-by-step guidance.</li>
+            <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />In-depth knowledge of cutting-edge digital tools.</p>
+            <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />Real-world projects to build a strong portfolio.</p>
+            <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />Flexible learning with step-by-step guidance.</p>
           </ul>
         </div>
 

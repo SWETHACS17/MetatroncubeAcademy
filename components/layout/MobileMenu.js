@@ -26,10 +26,14 @@ export default function MobileMenu() {
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about-us">About Us</Link></li>
                 <li className="menu-item-has-children">
-                    <Link href="#">Courses</Link>
+                    <Link href="/courses">Courses</Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
-                        <li><Link href="/courses">All Courses</Link></li>
-                        <li><Link href="/course-details">Course Details</Link></li>
+                          <li><Link href="">Video Editing</Link></li>
+                           <li><Link href="">Graphic Design</Link></li>
+                           <li><Link href="">Digital Marketing</Link></li>
+                           <li><Link href="">Web Development</Link></li>
+                           <li><Link href="">E-Commerce Development</Link></li>
+                            <li><Link href="/course-details">Course Details</Link></li>
                     </ul>
                     <div 
                         className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} 

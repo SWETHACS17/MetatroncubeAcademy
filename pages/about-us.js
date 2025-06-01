@@ -14,7 +14,7 @@ export default function AboutUs() {
                                     <div className="about__title-wrap">
                                         <div className="section__title">
                                             <span className="sub-title">Who we are</span>
-                                            <h2 className="title tg-svg">Building Careers with <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Industry-Ready</span>  Skills </h2>
+                                            <h2 className="title tg-svg">Building Careers with <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" /> Industry-Ready </span>  Skills </h2>
                                         </div>
                                         <p className="fw-medium">At Metatron Cube Academy, we believe in empowering individuals with skills that make a difference!!</p>
                                         <p>As an extension of Metatron Software Solutions, we bring years of expertise in Digital Marketing, Web Development, and Tech Solutions to our academy. Our goal is to bridge the gap between education and industry needs by providing hands-on, career-focused training.</p>
@@ -51,44 +51,44 @@ export default function AboutUs() {
                     </section>
                     <section className="fact-area fact-bg" data-background="/assets/img/bg/fact_bg.jpg">
                     <section className="vision-mission-area" style={{backgroundImage: "url(/assets/img/bg/fact_bg.jpg)"}}>
-    <div className="container">
-        <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-10">
-                <div className="row gx-4">
-                    <div className="col-md-6 mb-4 mb-md-">
-                        <div className="vision-card h-190 p-5 p-lg-5 text-center" 
-                             style={{
-                                 backgroundColor: 'rgba(9, 35, 111, 0.9)',
-                                 borderRadius: '10px',
-                                 color: 'white',
-                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
-                                 width: '100%',
-                                 height: '270px',
-                             }}>
-                            <h2 className="mb-3 position-relative pb-3  text-white">Our Vision</h2>
-                            <p className="mb-0  text-white">To create industry-ready professionals through innovative learning.</p>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="mission-card h-190 p-5 p-lg-5 text-center" 
-                             style={{
-                                 backgroundColor: 'rgb(9, 35, 111, 0.9)',
-                                 borderRadius: '10px',
-                                 color: 'white',
-                                 boxShadow: '0 10px 30px rgba(255, 254, 254, 0.2)',
-                                 width: '100%',
-                                 height: '270px',
-                             }}>
-                            <h2 className="mb-3 position-relative pb-3 text-white">Our Mission</h2>
-                            <p className="mb-0 text-white">To equip learners with practical skills that drive success in the digital world.</p>
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-xl-8 col-lg-10">
+                                    <div className="row gx-4">
+                                        <div className="col-md-6 mb-4 mb-md-">
+                                            <div className="vision-card h-190 p-5 p-lg-5 text-center" 
+                                                style={{
+                                                    backgroundColor: 'rgba(9, 35, 111, 0.9)',
+                                                    borderRadius: '10px',
+                                                    color: 'white',
+                                                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                                    width: '100%',
+                                                    height: '270px',
+                                                }}>
+                                                <h2 className="mb-3 position-relative pb-3  text-white">Our Vision</h2>
+                                                <p className="mb-0  text-white">To create industry-ready professionals through innovative learning.</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="mission-card h-190 p-5 p-lg-5 text-center" 
+                                                style={{
+                                                    backgroundColor: 'rgb(9, 35, 111, 0.9)',
+                                                    borderRadius: '10px',
+                                                    color: 'white',
+                                                    boxShadow: '0 10px 30px rgba(255, 254, 254, 0.2)',
+                                                    width: '100%',
+                                                    height: '270px',
+                                                }}>
+                                                <h2 className="mb-3 position-relative pb-3 text-white">Our Mission</h2>
+                                                <p className="mb-0 text-white">To equip learners with practical skills that drive success in the digital world.</p>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    </section>
                     </section>
                     <section className="cta-area-two position-relative">
                         <div className="cta__bg" data-background="/assets/img/bg/cta_bg.jpg" />
@@ -98,19 +98,16 @@ export default function AboutUs() {
                                     <div className="cta__content">
                                         <p>Metatroncube Academy</p>
                                         <h2 className="title">Join us and become part of a learning revolution where knowledge meets opportunity!</h2>
-                                        <div className="tg-button-container">
-                                        <div className="tg-button-container">
-                                        <Link
-                                            href="/courses"
-                                            className="btn tg-svg w-fit px-4 py-2 flex items-center gap-2"
-                                        >
-                                            <span className="text text-sm">Explore Courses</span>
-                                            <span className="svg-icon" id="about-btn">
-                                            <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
-                                            </span>
-                                        </Link>
-                                        </div>
-                                    </div>
+                                        <div className="banner__btn-wrap" data-aos-delay={800} style={{   display: 'flex',   justifyContent: 'center',   alignItems: 'center',   flexDirection: 'column', }}>
+                                            <div className="tg-button-wrap">
+                                                <Link href="/courses" className="btn tg-svg">
+                                                <span className="text">EXPLORE COURSES →</span>
+                                                </Link>
+                                            </div>
+                                            <div className="banner__phone">
+                                                {/* Empty div kept for layout consistency */}
+                                            </div>
+                                            </div>
                                 </div>
                             </div>
                         </div>
@@ -133,10 +130,10 @@ export default function AboutUs() {
                                     <h3 className="title tg-svg">What Makes Us <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Different!</span></h3>
                                 </div>
                                 <div className="content">
-                                    <p><b>Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
-                                    <p><b>Top-Tier Instructors: </b>Learn from experienced professionals.</p>
-                                    <p><b>Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
-                                    <p><b>Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  /><b> Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Top-Tier Instructors: </b>Learn from experienced professionals.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
                                     <p><b>Join us and take the first step toward a successful digital career!</b></p>
                                 </div>
                             </div>
@@ -148,3 +145,4 @@ export default function AboutUs() {
         </>
     )
 }
+

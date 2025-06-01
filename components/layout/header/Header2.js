@@ -54,9 +54,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                       <ul className="navigation" style={{ display: 'flex', gap: '30px', marginLeft: 'auto' }}>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/about-us">About Us</Link></li>
-                        <li className="menu-item-has-children"><Link href="#">Courses</Link>
-                          <ul className="sub-menu">
-                            <li><Link href="/courses">All Courses</Link></li>
+                        <li className="menu-item-has-children"><Link  href="/courses">Courses</Link>
+                          <ul className="sub-menu" style={{ minWidth: "260px" }}>
+                           <li><Link href="">Video Editing</Link></li>
+                           <li><Link href="">Graphic Design</Link></li>
+                           <li><Link href="">Digital Marketing</Link></li>
+                           <li><Link href="">Web Development</Link></li>
+                           <li><Link href="">E-Commerce Development</Link></li>
                             <li><Link href="/course-details">Course Details</Link></li>
                           </ul>
                         </li>
