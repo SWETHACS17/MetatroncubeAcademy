@@ -52,7 +52,8 @@ export default function AboutUs() {
                     
                     <section
                     className="fact-area fact-bg"
-                    style={{ padding: '115px 0', backgroundColor: '#091f40' }}
+                    data-background="/assets/img/bg/fact_bg.jpg"
+                    style={{ padding: '110px 0'}}
                     >
                     <div className="container">
                         <div className="row justify-content-center">
@@ -83,9 +84,10 @@ export default function AboutUs() {
                                 <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>
                                 Our Vision
                                 </h4>
-                                <p style={{ fontSize: '0.9rem', marginBottom: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
+                                <p style={{ fontSize: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
                                 To create industry-ready professionals through innovative learning.
                                 </p>
+                                <p style={{padding: '0.2rem'}}></p>
                             </div>
 
                             {/* Box 2 */}
@@ -108,9 +110,10 @@ export default function AboutUs() {
                                 <h4 style={{ fontSize: '1.6rem', marginBottom: '0.6rem', color: 'white' }}>
                                 Our Mission
                                 </h4>
-                                <p style={{ fontSize: '0.9rem', marginBottom: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
+                                <p style={{ fontSize: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
                                 To equip learners with practical skills that drive success in the digital world.
                                 </p>
+                                <p style={{padding: '0.2rem'}}></p>
                             </div>
                             </div>
                         </div>
