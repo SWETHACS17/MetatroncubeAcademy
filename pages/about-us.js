@@ -130,9 +130,9 @@ export default function AboutUs() {
                                         <p>Metatroncube Academy</p>
                                         <h2 className="title">Join us and become part of a learning revolution where knowledge meets opportunity!</h2>
                                         <div className="banner__btn-wrap" data-aos-delay={800} style={{   display: 'flex',   justifyContent: 'center',   alignItems: 'center',   flexDirection: 'column', }}>
-                                            <div className="tg-button-wrap">
+                                            <div className="tg-button-wrap" style={{ width: '160px', height: '45px'}}>
                                                 <Link href="/courses" className="btn tg-svg">
-                                                <span className="text">ENROLL NOW <i className="fas fa-angle-right"  style={{ paddingLeft: '5px' }}></i></span>
+                                                <span className="" style={{fontWeight: 500, fontSize: '0.85rem'}}>ENROLL NOW <img src="/assets/img/icons/btn-arrow.svg" alt="arrow icon" className="w-4 h-4" style={{paddingLeft: '5px', paddingBottom: '2px'}}/></span>
                                                 </Link>
                                             </div>
                                             <div className="banner__phone">

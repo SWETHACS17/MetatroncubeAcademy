@@ -7212,7 +7212,7 @@ textarea {
 }
 
 .cta-area-two {
-    padding: 130px 0 130px;
+    padding: 140px 0 130px;
     background-color: #072656;
     overflow: hidden;
     z-index: 1;
@@ -7283,7 +7283,7 @@ textarea {
 }
 
 .cta__shapes>*:nth-child(2) {
-    top: 36%;
+    top: 37%;
     left: 10%;
     max-width: 115px;
 }
