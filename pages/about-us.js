@@ -132,7 +132,7 @@ export default function AboutUs() {
                                         <div className="banner__btn-wrap" data-aos-delay={800} style={{   display: 'flex',   justifyContent: 'center',   alignItems: 'center',   flexDirection: 'column', }}>
                                             <div className="tg-button-wrap">
                                                 <Link href="/courses" className="btn tg-svg">
-                                                <span className="text">EXPLORE COURSES →</span>
+                                                <span className="text">ENROLL NOW <i className="fas fa-angle-right"  style={{ paddingLeft: '5px' }}></i></span>
                                                 </Link>
                                             </div>
                                             <div className="banner__phone">
@@ -146,7 +146,7 @@ export default function AboutUs() {
                         <div className="cta__shapes">
                             <img src="/assets/img/objects/cta_shape001.svg" alt="img" className="position-absolute" data-aos="fade-down-right" data-aos-delay={300} />
                             <img src="/assets/img/objects/cta_shape002.png" alt="img" className="position-absolute" />
-                            <img src="/assets/img/objects/cta_shape003.svg" alt="img" className="position-absolute" data-aos="fade-up-left" data-aos-delay={300} />
+                            <img src="/assets/img/objects/banner_shape03.png" alt="img" className="position-absolute" data-aos="fade-up-left" data-aos-delay={300} />
                         </div>
                     </section>
                     <section className="events-area position-relative section-pt-120 section-pb-90">

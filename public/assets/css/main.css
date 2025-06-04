@@ -7212,7 +7212,7 @@ textarea {
 }
 
 .cta-area-two {
-    padding: 150px 0 160px;
+    padding: 130px 0 130px;
     background-color: #072656;
     overflow: hidden;
     z-index: 1;
@@ -7246,7 +7246,7 @@ textarea {
 
 .cta__content .title {
     color: var(--tg-common-color-white);
-    font-size: 48px;
+    font-size: 43px;
     margin: 0 0 8px;
 }
 
@@ -7283,9 +7283,9 @@ textarea {
 }
 
 .cta__shapes>*:nth-child(2) {
-    top: 31%;
+    top: 36%;
     left: 10%;
-    max-width: 125px;
+    max-width: 115px;
 }
 
 @media (max-width: 1199.98px) {
