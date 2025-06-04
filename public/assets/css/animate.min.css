@@ -1,5 +1,106 @@
-@charset "UTF-8";
+/* Global shine underline styles */
+                    .shine-underline {
+                        position: relative;
+                        display: inline-block;
+                    }
 
+                    .shine-underline::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 0;
+                        height: 10px;
+                        background-image: url('/assets/img/others/shine_underline.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        transition: width 0.5s ease-out;
+                    }
+
+                    /* Initial animation (appear from left to right) */
+                    .shine-underline.animate::after {
+                        width: 100%;
+                    }
+
+                    /* Hover animation */
+                    .shine-underline:hover::after {
+                        width: 100%;
+                    }
+
+                    @keyframes slideIn {
+                        0% {
+                            transform: translateX(-50px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideDown {
+                        0% {
+                            transform: translateY(-100px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideRight {
+                        0% {
+                            transform: translateX(-200px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    .slide-text {
+                        animation: slideIn 1.5s ease-out forwards;
+                    }
+
+                    /* Mobile and split screen styles */
+                    @media (max-width: 1199px) {
+                        .banner__content {
+                            text-align: left !important;
+                            padding-left: 15px;
+                        }
+                        
+                        .download-image {
+                            max-width: 80px !important;
+                            left: 15px !important;
+                            top: 40px !important;
+                        }
+                        
+                        .slider-shape-image {
+                            max-width: 250px !important;
+                            bottom: 3% !important;
+                            z-index: 0 !important;
+                        }
+                        
+                        .banner-area .container {
+                            padding-left: 0;
+                        }
+                        
+                        .banner__btn-wrap {
+                            justify-content: flex-start !important;
+                            padding-left: 0 !important;
+                            margin-top: 10px !important;
+                        }
+                        
+                        .tg-button-wrap {
+                            margin-left: 0 !important;
+                        }
+                        
+                        .btn {
+                            padding: 8px 16px !important;
+                            font-size: 14px !important;
+                        }
+                    }
+                
 
 /*!
 Animate.css - http://daneden.me/animate

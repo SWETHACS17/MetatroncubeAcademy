@@ -1,31 +1,67 @@
 // pages/contact.js
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
 export default function ContactForm() {
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div style={{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh',
+      minHeight: '100vh',
       fontFamily: 'Arial, sans-serif',
       padding: '20px',
       boxSizing: 'border-box',
+      flexWrap: 'wrap'
     }}>
       {/* Left Image Section */}
-      <div style={{
+      <div ref={imageRef} style={{
         flex: '1',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingRight: '20px'
+        padding: '1px',
+        minWidth: '300px',
+        opacity: '0',
+        transform: 'translateX(-100px)',
+        transition: 'opacity 0.8s ease-out, transform 0.8s ease-out'
       }}>
         <Image
           src="/assets/img/others/contact.png"
           alt="Contact Illustration"
-          width={400}
-          height={400}
-          style={{ maxWidth: '100%', height: 'auto' }}
+          width={600}
+          height={600}
+          style={{ 
+            maxWidth: '100%', 
+            height: 'auto',
+            objectFit: 'contain'
+          }}
         />
       </div>
 
@@ -35,17 +71,17 @@ export default function ContactForm() {
         maxWidth: '500px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '10px',
-        marginRight: '500px',
+        gap: '15px',
+        padding: '20px',
+        minWidth: '300px'
       }}>
         <h2 style={{
           fontSize: '28px',
           fontWeight: 'bold',
           color: '#002855',
           marginBottom: '20px'
-          
         }}>
-        
+          Contact Us
         </h2>
 
         <input type="text" placeholder="Your Name" style={inputStyle} />
@@ -58,24 +94,52 @@ export default function ContactForm() {
           backgroundColor: '#0B5ED7',
           color: '#fff',
           border: 'none',
-          padding: '10px 20px',
+          padding: '12px 24px',
           fontWeight: 'bold',
           cursor: 'pointer',
           borderRadius: '5px',
-          width: '100px'
+          width: '120px',
+          fontSize: '16px',
+          transition: 'background-color 0.3s',
+          ':hover': {
+            backgroundColor: '#0949a8'
+          }
         }}>
           SUBMIT
         </button>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          div {
+            flex-direction: column;
+          }
+          
+          .image-container {
+            order: 2;
+            margin-top: 30px;
+          }
+          
+          .form-container {
+            order: 1;
+            margin-right: 0;
+          }
+        }
+      `}</style>
     </div>
   );
 }
 
 const inputStyle = {
-  padding: '10px',
+  padding: '12px',
   fontSize: '16px',
   border: '1px solid #ccc',
   borderRadius: '4px',
   width: '100%',
-  boxSizing: 'border-box'
+  boxSizing: 'border-box',
+  transition: 'border-color 0.3s',
+  ':focus': {
+    borderColor: '#0B5ED7',
+    outline: 'none'
+  }
 };

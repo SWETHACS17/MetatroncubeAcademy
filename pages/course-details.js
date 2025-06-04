@@ -34,7 +34,7 @@ export default function CounseDetails() {
                         <div className="row">
                             <div className="col-lg-8">
                                 <div className="courses__breadcrumb-content">
-                                    <Link href="#" className="category">Graphic Design</Link>
+                                    <Link href="#" className="category">Graphic Desin</Link>
                                     <h3 className="title">Essential Beginners UX/UI Core Course For You 2023</h3>
                                     <p>Design tutorial will help you learn quickly and thoroughly orem ipsumor lipsum as it is sometime</p>
                                     <ul className="courses__item-meta list-wrap">

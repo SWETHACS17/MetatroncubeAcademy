@@ -46,12 +46,13 @@ export default function TestimonialSlider1() {
                 <div className="col-lg-5 col-md-7 col-sm-9">
                     <div className="testimonial__image-wrapper position-relative">
                         <Slider {...settings1} asNavFor={nav2} ref={slider1Ref}>
-                            <div>
-                                <img src="/assets/img/others/testimonial01.png" alt="img" />
+                           <div>
+                                <img src="/assets/img/others/testimonial01.png" alt="img" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
                             </div>
                             <div >
-                                <img src="/assets/img/others/testimonial01.png" alt="img" />
+                                <img src="/assets/img/others/testimonial01.png" alt="img" className="img-fluid" style={{ maxWidth: '100%', height: 'auto' }} />
                             </div>
+
                         </Slider>
                     </div>
                 </div>
@@ -69,10 +70,10 @@ export default function TestimonialSlider1() {
                             focusOnSelect={true}
                             className="testimonial__content-active testimonial__content-nav">
                             <div className="testimonial__content-item">
-                                <p><p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Practical Hands-On Training: Gain real-world experience with live projects.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Expert Mentors: Get trained by professionals with years of industry experience.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p></p>
+                                <p><p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Industry-Driven Curriculum:</b> Learn the latest trends, tools, and strategies.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /><b>  Practical Hands-On Training: </b> Gain real-world experience with live projects.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Expert Mentors:</b> Get trained by professionals with years of industry experience.</p>
+                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Career Support & Guidance:</b> Assistance to secure jobs, freelance projects, or start your own business.</p></p>
                             </div>
                         </Slider>
                     </div>
