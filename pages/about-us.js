@@ -49,57 +49,75 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </section>
-                    <section className="fact-area fact-bg" style={{ padding: '110px 0', backgroundColor: '#091f40' }}>
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-10 col-lg-10">
-                                    <div
-                                        className="d-flex flex-wrap justify-content-between"
-                                        style={{ gap: '20px' }}
-                                    >
-                                        <div
-                                            style={{
-                                                backgroundColor: 'rgba(9, 45, 100, 1)',
-                                                borderRadius: '15px',
-                                                color: 'white',
-                                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
-                                                width: 'calc(50% - 10px)', // for 20px gap total
-                                                height: '220px',
-                                                padding: '1.5rem',
-                                                textAlign: 'center',
-                                            }}
-                                        >
-                                            <p style={{marginBottom: '0.5rem'}}></p>
-                                            <img src="/assets/img/icons/bulb-icon.png" width={90}/>
-                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>Our Vision</h4>
-                                            <p style={{ fontSize: '0.85rem', margin: 0, color: 'white', fontWeight: 550 }}>
-                                                To create industry-ready professionals through innovative learning.
-                                            </p>
-                                        </div>
-                                        <div
-                                            style={{
-                                                backgroundColor: 'rgba(9, 45, 100, 1)',
-                                                borderRadius: '15px',
-                                                color: 'white',
-                                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
-                                                width: 'calc(50% - 10px)',
-                                                height: '220px',
-                                                paddingTop: '1.5rem',
-                                                textAlign: 'center',
-                                            }}
-                                        >   
-                                            <p style={{marginBottom: '0.7rem'}}></p>
-                                            <img src="/assets/img/icons/atom-icon.png" width={105} style={{marginBottom: '0.7rem'}}/>
-                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>Our Mission</h4>
-                                            <p style={{ fontSize: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
-                                                To equip learners with practical skills that drive success in the digital world.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                    
+                    <section
+                    className="fact-area fact-bg"
+                    style={{ padding: '115px 0', backgroundColor: '#091f40' }}
+                    >
+                    <div className="container">
+                        <div className="row justify-content-center">
+                        <div className="col-xl-10 col-lg-10">
+                            <div
+                            style={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                justifyContent: 'space-between',
+                                gap: '20px',
+                            }}
+                            >
+                            {/* Box 1 */}
+                            <div
+                                style={{
+                                backgroundColor: 'rgba(9, 45, 100, 1)',
+                                borderRadius: '15px',
+                                color: 'white',
+                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                flex: '1 1 calc(50% - 10px)', // Two columns on desktop
+                                minWidth: '300px', // Prevents it from shrinking too much
+                                height: 'auto',
+                                padding: '1.5rem',
+                                textAlign: 'center',
+                                }}
+                            >
+                                <img src="/assets/img/icons/bulb-icon.png" width={90} style={{ marginBottom: '0.7rem' }} />
+                                <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>
+                                Our Vision
+                                </h4>
+                                <p style={{ fontSize: '0.9rem', marginBottom: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
+                                To create industry-ready professionals through innovative learning.
+                                </p>
+                            </div>
+
+                            {/* Box 2 */}
+                            <div
+                                style={{
+                                backgroundColor: 'rgba(9, 45, 100, 1)',
+                                borderRadius: '15px',
+                                color: 'white',
+                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                flex: '1 1 calc(50% - 10px)',
+                                minWidth: '300px',
+                                height: 'auto',
+                                padding: '0.5rem',
+                                paddingTop: '1.5rem',
+                                textAlign: 'center',
+                                }}
+                            >
+                                <p style={{marginBottom: '0.7rem'}}></p>
+                                <img src="/assets/img/icons/atom-icon.png" width={105} style={{ marginBottom: '0.8rem' }} />
+                                <h4 style={{ fontSize: '1.6rem', marginBottom: '0.6rem', color: 'white' }}>
+                                Our Mission
+                                </h4>
+                                <p style={{ fontSize: '0.9rem', marginBottom: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
+                                To equip learners with practical skills that drive success in the digital world.
+                                </p>
+                            </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
                     </section>
+
                     <section className="cta-area-two position-relative">
                         <div className="cta__bg" data-background="/assets/img/bg/cta_bg.jpg" />
                         <div className="container">
