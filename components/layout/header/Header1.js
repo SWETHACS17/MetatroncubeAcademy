@@ -80,7 +80,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                       </Link>
                     </div>
                     <div className="tgmobile__menu-outer">
-                      <MobileMenu />
+                      <MobileMenu  />
                     </div>
                     {/* Added Mobile Social Links */}
                     <div className="social-links" style={{ 

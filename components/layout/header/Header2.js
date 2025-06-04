@@ -41,7 +41,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
         <div id="sticky-header" className={`tg-header__area transparent-header ${scroll ? "sticky-menu" : ""}`}>
           <div className="container custom-container">
             <div className="row">
-              <div className="col-12" style={{ marginTop: '40px'}}>
+              <div className="col-12" >
                 <div className="mobile-nav-toggler" onClick={handleMobileMenu}><i className="tg-flaticon-menu-1" /></div>
                 <div className="tgmenu__wrap"  >
                   <nav className="tgmenu__nav" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -80,7 +80,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                       </Link>
                     </div>
                     <div className="tgmobile__menu-outer">
-                      <MobileMenu />
+                      <MobileMenu  handleMobileMenu={handleMobileMenu} />
                     </div>
                     {/* Added Mobile Social Links */}
                     <div className="social-links" style={{ 
