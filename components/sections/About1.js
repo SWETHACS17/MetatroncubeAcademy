@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function About1() {
     return (
         <>
-            <section className="about-area tg-motion-effects section-py-120">
+            <section className="about-area tg-motion-effects section-py-120" style={{ backgroundColor: '#FAFAFA' }}>
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-xl-6 col-lg-8">

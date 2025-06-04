@@ -1,28 +1,4 @@
 /* Global shine underline styles */
-                    .shine-underline {
-                        position: relative;
-                        display: inline-block;
-                    }
-
-                    .shine-underline::after {
-                        content: '';
-                        position: absolute;
-                        bottom: -9px;
-                        left: 0;
-                        width: 120px;
-                        height: 30px;
-                        background-image: url('/assets/img/others/shine_underline.png');
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        transition: width 0.5s ease-out;
-                    }
-
-                    /* Initial animation (appear from left to right) */
-                    .shine-underline:hover::after,
-                    .shine-underline.animate::after {
-                        width: 100%; /* Keeps full-width expansion */
-                    }
 
                     @keyframes slideIn {
                         0% {
@@ -95,7 +71,10 @@
                             padding: 8px 16px !important;
                             font-size: 14px !important;
                         }
-                    }               
+                    }            
+                    
+                    
+                    
                 
 /* Container for newsletter page*/
 .contact-container {

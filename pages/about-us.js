@@ -1,4 +1,3 @@
-
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 export default function AboutUs() {
@@ -152,22 +151,32 @@ export default function AboutUs() {
                     <section className="events-area position-relative section-pt-120 section-pb-90">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
-                                <img src="/assets/img/others/what_makes_us_different.png" alt="img" className="img-fluid " style={{ height: "370px", width: "520px" }} />
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="section__title">
-                                    <span className="sub-title">Metatroncube Academy</span>
-                                    <h3 className="title tg-svg">What Makes Us <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Different!</span></h3>
-                                </div>
-                                <div className="content">
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  /><b> Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Top-Tier Instructors: </b>Learn from experienced professionals.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
-                                    <p><b>Join us and take the first step toward a successful digital career!</b></p>
-                                </div>
-                            </div>
+                             <div className="col-lg-6">
+                            <img 
+                                src="/assets/img/others/what_makes_us_different.png" 
+                                alt="img" 
+                                className="img-fluid" 
+                                style={{ 
+                                    height: "auto", 
+                                    maxWidth: "100%",
+                                    width: "100%",
+                                    objectFit: "contain"
+                                }} 
+                            />
+                        </div>
+                           <div className="col-lg-6">
+                <div className="section__title">
+                    <span className="sub-title">Metatroncube Academy</span>
+                    <h3 className="title tg-svg">What Makes Us <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Different!</span></h3>
+                </div>
+                <div className="content">
+                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  /><b> Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
+                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Top-Tier Instructors: </b>Learn from experienced professionals.</p>
+                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
+                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
+                    <p><b>Join us and take the first step toward a successful digital career!</b></p>
+                </div>
+            </div>
                         </div>
                     </div>
                 </section>
@@ -176,4 +185,3 @@ export default function AboutUs() {
         </>
     )
 }
-
