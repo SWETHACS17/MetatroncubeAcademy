@@ -86,19 +86,9 @@ export default function Banner1() {
             `}</style>
             <section
                 className="banner-area banner-bg"
-                style={{
-                    marginTop: "60px",
-                    position: "relative",
-                    overflow: "hidden",
-                    display: "flex",
-                    alignItems: "center",
-                    minHeight: "50vh",
-                }}
-            >
-                {/* Animated slider_shape1
-                .png - slides from top to bottom (3rd in sequence) */}
-                <img 
-                    src="/assets/img/banner/slider_shape1.png" 
+                style={{ marginTop: "60px",   position: "relative",   overflow: "hidden",   display: "flex",  alignItems: "center",   minHeight: "50vh",  }}  >
+                {/* Animated slider_shape1   .png - slides from top to bottom (3rd in sequence) */}
+                <img    src="/assets/img/banner/slider_shape1.png" 
                     alt="shape" 
                     key={`slider_shape1
                         -${animateKey}`}
@@ -178,7 +168,7 @@ export default function Banner1() {
                                     <div className="content">
                                         {current.features.map((text, index) => (
                                             <p key={index} style={{ marginBottom: '8px' }}>
-                                                <i className="fas fa-check-circle" style={{ color: "#007bff" }} />{" "}
+                                                <i className="fas fa-check-circle" style={{ color: "#F5A623" }} />{" "}
                                                 {text}
                                             </p>
                                         ))}

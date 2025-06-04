@@ -7,25 +7,21 @@
                     .shine-underline::after {
                         content: '';
                         position: absolute;
-                        bottom: -5px;
+                        bottom: -9px;
                         left: 0;
-                        width: 0;
-                        height: 10px;
+                        width: 120px;
+                        height: 30px;
                         background-image: url('/assets/img/others/shine_underline.png');
                         background-size: contain;
                         background-repeat: no-repeat;
-                        background-position: left center;
+                        background-position: center;
                         transition: width 0.5s ease-out;
                     }
 
                     /* Initial animation (appear from left to right) */
+                    .shine-underline:hover::after,
                     .shine-underline.animate::after {
-                        width: 100%;
-                    }
-
-                    /* Hover animation */
-                    .shine-underline:hover::after {
-                        width: 100%;
+                        width: 100%; /* Keeps full-width expansion */
                     }
 
                     @keyframes slideIn {
@@ -99,7 +95,7 @@
                             padding: 8px 16px !important;
                             font-size: 14px !important;
                         }
-                    }
+                    }               
                 
 /* Container for newsletter page*/
 .contact-container {
