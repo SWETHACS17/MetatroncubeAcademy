@@ -60,7 +60,7 @@ export default function AboutUs() {
                                         <div
                                             style={{
                                                 backgroundColor: 'rgba(9, 45, 100, 1)',
-                                                borderRadius: '10px',
+                                                borderRadius: '15px',
                                                 color: 'white',
                                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
                                                 width: 'calc(50% - 10px)', // for 20px gap total
@@ -69,27 +69,29 @@ export default function AboutUs() {
                                                 textAlign: 'center',
                                             }}
                                         >
+                                            <p style={{marginBottom: '0.5rem'}}></p>
                                             <img src="/assets/img/icons/bulb-icon.png" width={90}/>
-                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'white' }}>Our Vision</h4>
-                                            <p style={{ fontSize: '0.82rem', margin: 0, color: 'white' }}>
+                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>Our Vision</h4>
+                                            <p style={{ fontSize: '0.85rem', margin: 0, color: 'white', fontWeight: 550 }}>
                                                 To create industry-ready professionals through innovative learning.
                                             </p>
                                         </div>
                                         <div
                                             style={{
                                                 backgroundColor: 'rgba(9, 45, 100, 1)',
-                                                borderRadius: '10px',
+                                                borderRadius: '15px',
                                                 color: 'white',
                                                 boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
                                                 width: 'calc(50% - 10px)',
                                                 height: '220px',
-                                                padding: '1.5rem',
+                                                paddingTop: '1.5rem',
                                                 textAlign: 'center',
                                             }}
-                                        >
-                                            <img src="/assets/img/icons/atom-icon.png" width={110}/>
-                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'white' }}>Our Mission</h4>
-                                            <p style={{ fontSize: '0.82rem', margin: 0, color: 'white' }}>
+                                        >   
+                                            <p style={{marginBottom: '0.7rem'}}></p>
+                                            <img src="/assets/img/icons/atom-icon.png" width={105} style={{marginBottom: '0.7rem'}}/>
+                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', color: 'white' }}>Our Mission</h4>
+                                            <p style={{ fontSize: '0.9rem', margin: 0, color: 'white', fontWeight: 550 }}>
                                                 To equip learners with practical skills that drive success in the digital world.
                                             </p>
                                         </div>
