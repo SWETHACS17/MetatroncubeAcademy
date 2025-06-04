@@ -76,7 +76,8 @@ export default function Banner1() {
         <>
             <style jsx>{`
                 @media (max-width: 767px) {
-                    .download-image {
+                    .slider_shape1
+                    -image {
                         top: 40px !important;
                         left: 20px !important;
                         max-width: 80px !important;
@@ -94,12 +95,15 @@ export default function Banner1() {
                     minHeight: "50vh",
                 }}
             >
-                {/* Animated download.png - slides from top to bottom (3rd in sequence) */}
+                {/* Animated slider_shape1
+                .png - slides from top to bottom (3rd in sequence) */}
                 <img 
-                    src="/assets/img/banner/download.png" 
+                    src="/assets/img/banner/slider_shape1.png" 
                     alt="shape" 
-                    key={`download-${animateKey}`}
-                    className="download-image"
+                    key={`slider_shape1
+                        -${animateKey}`}
+                    className="slider_shape1
+                    -image"
                     style={{
                         position: "absolute",
                         top: "80px",
@@ -119,7 +123,7 @@ export default function Banner1() {
                     className="slider-shape-image"
                     style={{
                         position: "absolute",
-                        bottom: "20px",
+                        bottom: "60px",
                         left: "10px",
                         zIndex: 0,
                         animation: `slideRight 0.5s ease-out 0.5s forwards`,
@@ -164,8 +168,7 @@ export default function Banner1() {
                                     alt="shape"
                                     className="shape alltuchtopdown"
                                 />
-                                <span className="sub-title slide-text" data-aos="fade-right" data-aos-delay={200}>
-                                    {current.subtitle}
+                               <span className="sub-title slide-text" data-aos="fade-right" data-aos-delay={200}   style={{ background: 'none', paddingLeft: '0' }} >{current.subtitle}
                                 </span>
                                 <h3 className="title tg-svg slide-text" data-aos="fade-right" data-aos-delay={400}>
                                     {current.title}
