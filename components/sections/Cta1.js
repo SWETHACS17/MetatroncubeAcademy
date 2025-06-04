@@ -80,7 +80,7 @@ const Cta1 = () => {
       <section className="cta-area">
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-11.5">
               <div className="cta__wrapper">
                 <div className="section__title white-title">
                   <h2 className="title tg-svg">Join us  <span className="position-relative"><span className="svg-icon" id="svg-9" data-svg-icon="assets/img/icons/title_shape.svg" />& Elevate</span>

@@ -101,7 +101,148 @@
                         }
                     }
                 
+/* Container for newsletter page*/
+.contact-container {
+  display: flex;
+  justify-content: center;
+ 
+  min-height: auto;
+  font-family: Arial, sans-serif;
+  padding: 80px 320px 80px 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
 
+/* Image Section */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  min-width: 300px;
+  opacity: 0;
+  transform: translateX(-90px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.image-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Image itself */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Form Section */
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1px;
+  min-width: 300px;
+}
+
+/* Heading */
+.form-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+/* Input Styles */
+.form-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #0b5ed7;
+  outline: none;
+}
+
+.message-input {
+  min-height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #0949a8;
+}
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px 15px;
+    flex-direction: column;
+    min-height: auto;
+    margin: 20px 0;
+  }
+
+  .contact-image {
+    order: 1;
+    margin-top: 20px;
+    transform: translateX(0);
+    opacity: 1;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-form {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  .form-heading {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .form-input {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px 24px;
+    margin-top: 5px;
+  }
+}
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
