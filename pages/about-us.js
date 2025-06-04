@@ -49,46 +49,54 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </section>
-                    <section className="fact-area fact-bg" data-background="/assets/img/bg/fact_bg.jpg">
-                    <section className="vision-mission-area" style={{backgroundImage: "url(/assets/img/bg/fact_bg.jpg)"}}>
+                    <section className="fact-area fact-bg" style={{ padding: '110px 0', backgroundColor: '#091f40' }}>
                         <div className="container">
                             <div className="row justify-content-center">
-                                <div className="col-xl-8 col-lg-10">
-                                    <div className="row gx-4">
-                                        <div className="col-md-6 mb-4 mb-md-">
-                                            <div className="vision-card h-190 p-5 p-lg-5 text-center" 
-                                                style={{
-                                                    backgroundColor: 'rgba(9, 35, 111, 0.9)',
-                                                    borderRadius: '10px',
-                                                    color: 'white',
-                                                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
-                                                    width: '100%',
-                                                    height: '270px',
-                                                }}>
-                                                <h2 className="mb-3 position-relative pb-3  text-white">Our Vision</h2>
-                                                <p className="mb-0  text-white">To create industry-ready professionals through innovative learning.</p>
-                                            </div>
+                                <div className="col-xl-10 col-lg-10">
+                                    <div
+                                        className="d-flex flex-wrap justify-content-between"
+                                        style={{ gap: '20px' }}
+                                    >
+                                        <div
+                                            style={{
+                                                backgroundColor: 'rgba(9, 45, 100, 1)',
+                                                borderRadius: '10px',
+                                                color: 'white',
+                                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                                width: 'calc(50% - 10px)', // for 20px gap total
+                                                height: '220px',
+                                                padding: '1.5rem',
+                                                textAlign: 'center',
+                                            }}
+                                        >
+                                            <img src="/assets/img/icons/bulb-icon.png" width={90}/>
+                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'white' }}>Our Vision</h4>
+                                            <p style={{ fontSize: '0.82rem', margin: 0, color: 'white' }}>
+                                                To create industry-ready professionals through innovative learning.
+                                            </p>
                                         </div>
-                                        <div className="col-md-6">
-                                            <div className="mission-card h-190 p-5 p-lg-5 text-center" 
-                                                style={{
-                                                    backgroundColor: 'rgb(9, 35, 111, 0.9)',
-                                                    borderRadius: '10px',
-                                                    color: 'white',
-                                                    boxShadow: '0 10px 30px rgba(255, 254, 254, 0.2)',
-                                                    width: '100%',
-                                                    height: '270px',
-                                                }}>
-                                                <h2 className="mb-3 position-relative pb-3 text-white">Our Mission</h2>
-                                                <p className="mb-0 text-white">To equip learners with practical skills that drive success in the digital world.</p>
-
-                                            </div>
+                                        <div
+                                            style={{
+                                                backgroundColor: 'rgba(9, 45, 100, 1)',
+                                                borderRadius: '10px',
+                                                color: 'white',
+                                                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
+                                                width: 'calc(50% - 10px)',
+                                                height: '220px',
+                                                padding: '1.5rem',
+                                                textAlign: 'center',
+                                            }}
+                                        >
+                                            <img src="/assets/img/icons/atom-icon.png" width={110}/>
+                                            <h4 style={{ fontSize: '1.6rem', marginBottom: '1rem', color: 'white' }}>Our Mission</h4>
+                                            <p style={{ fontSize: '0.82rem', margin: 0, color: 'white' }}>
+                                                To equip learners with practical skills that drive success in the digital world.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
                     </section>
                     <section className="cta-area-two position-relative">
                         <div className="cta__bg" data-background="/assets/img/bg/cta_bg.jpg" />
