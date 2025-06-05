@@ -98,6 +98,84 @@ export const Blog = [
         "category": "SKILL DEVELOPMENT",
         "author": "Admin",
         "date": "25 April 2023"
+    },
+    {
+        "id": 4,
+        "slug": "digital-marketing-tips-tricks",
+        "title": "Top 7 Mistakes Beginners Make While Learning Web Development and How to Avoid Them",
+        "img": "blog_thumb03.jpg",
+        "category": "SKILL DEVELOPMENT",
+        "author": "Admin",
+        "date": "25 April 2023",
+        "description": `"<div> <h2>Introduction</h2>
+        <p>Becoming a web developer in 2025 is more achievable than ever. 
+        There are thousands of free tutorials, online communities, and tools that make it easier to learn. 
+        But with so much information out there, beginners often fall into the same traps, wasting time, burning out, or even giving up  
+        <br>If you're just starting in web development, here are seven common mistakes to avoid, 
+        plus practical tips to help you stay focused and grow your skills the smart way.</p> 
+        <h3>Mistake 1: Trying to Learn Everything at Once</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>Many beginners think they need to learn HTML, CSS, JavaScript, React, Angular, Node.js, Python, and databases… all in one go.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Start small. Learn the fundamentals (HTML, CSS, JavaScript) first. You can add frameworks and backend tools once you're confident with the basics.<br>
+        Want a structured path that builds your skills step-by-step? 
+        <a href=#>This beginner-friendly web development course</a> breaks it down in a way that's doable.</p>
+        <h3>Mistake 2: Watching Tutorials Without Building Anything</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>Endless tutorials give the illusion of learning, but you're not gaining real experience.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Apply what you learn by building mini-projects. Even a simple to-do list app or 
+        personal blog can teach you more than 10 hours of video content.</p>
+        <p><b>Pro Tip: </b>Build something after every tutorial. Learn Flexbox? Build a basic landing page using it.</p>
+        <h3>Mistake 3: Ignoring the Basics of CSS and JavaScript</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>Some learners skip straight to frameworks like React without really understanding how the web works.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Don't underestimate the power of vanilla JavaScript and basic CSS. 
+        These are the foundations of everything you'll build later.</p>
+        <p>If you're looking for a course that covers the essentials before diving into advanced tools, 
+        check out <a href=#>Metatron Cube Academy's web development course.</a></p>
+        <h3>Mistake 4: Comparing Yourself to Others</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>You see someone on LinkedIn building apps in a week and feel like you're falling behind.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Everyone's journey is different. Focus on daily progress, not perfection. 
+        Even learning for 30 minutes a day adds up.</p>
+        <p>Remember: Every great developer once Googled "Why won't my button centre?"</p>
+        <h3>Mistake 5: Not Creating a Portfolio</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>You might be learning, but you're not documenting or showing it anywhere.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Create a GitHub account. Make a simple portfolio website. 
+        Upload your projects, no matter how small; they show your progress and interest.</p>
+        <p><b>Bonus: </b>Recruiters love to see real work, even if it's just hobby projects.</p>
+        <h3>Mistake 6: Giving Up Too Soon</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>You hit one bug that breaks your whole layout, and it feels like you're not "smart enough" for this.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Bugs are part of the process. Even senior developers get stuck. Use forums like Stack Overflow, Reddit, or YouTube to troubleshoot and keep going.<br>
+        Think of errors as clues, not roadblocks.</p>
+        <h3>Mistake 7: Not Following a Learning Roadmap</h3>
+        <h5 className="inner-title">The Problem:</h5>
+        <p>Jumping from one random YouTube tutorial to another leads to gaps in knowledge and burnout.</p>
+        <h5 className="inner-title">The Fix:</h5>
+        <p>Follow a structured curriculum that takes you from beginner to job-ready. 
+        This way, you avoid missing key concepts and stay focused.</p>
+        <p>Here's a solid place to start: <a href=#>Metatron Cube Academy's Web Development Course</a>. 
+        It's beginner-friendly and project-based, perfect for staying on track.</p>
+        <h2>Final Thoughts</h2>
+        <p>Learning web development is a marathon, not a sprint. You will make mistakes, and that's okay. What matters is how you respond to them.</p>
+        <p>Avoiding these common pitfalls will save you time, reduce frustration, and help you become a confident, job-ready web developer faster.</p>
+        <h2>Quick Recap: How to Learn Web Dev the Smart Way</h2>
+        <div class="event-details-list">
+            <ul class="list-wrap">
+                <li><i class="fas fa-check-circle"></i> Focus on one thing at a time</li>
+                <li><i class="fas fa-check-circle"></i> Build after you learn</li>
+                <li><i class="fas fa-check-circle"></i> Master the fundamentals before frameworks</li>
+                <li><i class="fas fa-check-circle"></i> Document your progress (GitHub, portfolio)</li>
+                <li><i class="fas fa-check-circle"></i> Follow a structured path, not random tutorials</li>
+            </ul>
+            <p>Start smart, stay consistent, and don't be afraid to make mistakes. That's how real developers grow.</p>
+        </div>"`
     }
-    
 ]
