@@ -27,8 +27,8 @@ const Cta1 = () => {
           }}
         >
           <div className="section__title">
-            <span className="sub-title" style={{ fontSize: "1.2rem" }}>Learn Different, Stand Out!</span>
-            <h2 className="title tg-svg" style={{ fontSize: "2.5rem" }}>
+            <span className="sub-title" style={{ fontSize: "1rem" }}>Metatroncube Academy</span>
+            <h2 className="title tg-svg" style={{ fontSize: "2.2rem" }}>
               Our{" "}
               <span className="position-relative">
                 <span
@@ -40,16 +40,16 @@ const Cta1 = () => {
               </span>
             </h2>
           </div>
-          <p className="description" style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
+          <p className="description" style={{ fontSize: "1rem", lineHeight: "1.4" ,marginTop: "1rem", lineHeight: "1.6"}}>
             We combine theory with practical application, ensuring you don't just learn but also implement your skills effectively. Our structured learning process makes it easy for beginners and professionals to upgrade their knowledge.
           </p>
 
-          <h3 className="subheading" style={{ fontSize: "1.5rem" }}>What Will You Gain</h3>
-          <ul className="points" style={{ fontSize: "1.2rem", lineHeight: "1.6", paddingLeft: "1.5rem",marginBottom: "0.8rem" }}>
-            <p style={{fontSize: "1.1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />In-depth knowledge of cutting-edge digital tools.</p>
-            <p style={{fontSize: "1.1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />Real-world projects to build a strong portfolio.</p>
-            <p style={{fontSize: "1.1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />Flexible learning with step-by-step guidance.</p>
-          </ul>
+          <p className="Helvetica, Sans-serif" style={{ fontSize: "1.5rem" ,fontWeight: "400", color: "#082A5E"}}>What Will You Gain</p>
+          <div  style={{ fontSize: "1.2rem", lineHeight: "1", marginBottom: "0.8rem" ,marginTop: "1rem" }}>
+            <p style={{fontSize: "1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />&nbsp;&nbsp;&nbsp;In-depth knowledge of cutting-edge digital tools.</p>
+            <p style={{fontSize: "1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />&nbsp;&nbsp;&nbsp;Real-world projects to build a strong portfolio.</p>
+            <p style={{fontSize: "1rem"}}><i className="fas fa-check-circle " style={{ color: '#007bff' }}  />&nbsp;&nbsp;&nbsp;Flexible learning with step-by-step guidance.</p>
+          </div>
         </div>
 
         <div

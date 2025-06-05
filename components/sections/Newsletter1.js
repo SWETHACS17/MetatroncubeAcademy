@@ -54,8 +54,7 @@ export default function ContactForm() {
           className="form-input message-input"
         />
         <input type="text" placeholder="four+6=?" className="form-input" />
-
-        <button className="submit-button">SUBMIT</button>
+        <button className="submit-button" style={{fontFamily: 'Montserrat, sans-serif'}}>SUBMIT</button>
       </div>
     </div>
   );

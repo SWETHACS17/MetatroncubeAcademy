@@ -176,10 +176,13 @@ export default function Banner1() {
                                 </div>
 
                                 <div className="banner__btn-wrap slide-text" data-aos="fade-right" data-aos-delay={800}>
-                                    <div className="tg-button-wrap">
-                                        <Link href="/courses" className="btn tg-svg" style={{ padding: '14px 24px', fontSize: '16px' }}>
-                                            <span className="text">EXPLORE COURSES →</span>
-                                        </Link>
+                                    <div className="tg-button-wrap justify-content-start">
+                                    <Link href="/courses" className="btn btn-primary tg-svgs">
+                                        <span className="text">EXPLORE COURSES</span>
+                                        <span className="svgs-icons">
+                                        <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+                                        </span>
+                                    </Link>
                                     </div>
                                     <div className="banner__phone"></div>
                                 </div>
@@ -191,3 +194,5 @@ export default function Banner1() {
         </>
     );
 }
+
+ 
