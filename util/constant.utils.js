@@ -90,7 +90,7 @@ export const Blog = [
         "img": "blog_thumb02.jpg",
         "category": "COURSE",
         "author": "Admin",
-        "date": "25 April 2023",
+        "date": "14 April 2023",
         "description": `"<div> 
         <h2>Introduction</h2>
 
@@ -118,7 +118,7 @@ export const Blog = [
 
 
         
-        <h2>Step 1: Learn the Fundamentals of Digital Marketing</h2>
+        <h3>Step 1: Learn the Fundamentals of Digital Marketing</h3>
         <p>Before you start applying for jobs or freelancing, it’s essential to understand the core components of digital marketing, 
         including:</p>
         <ul class="list-wrap">
@@ -132,7 +132,7 @@ export const Blog = [
             <p>The best way to learn these skills is through a structured digital marketing course that provides step-by-step guidance.</p>
             <p>Enroll in Metatron Cube Academy’s <a href="https://metatroncubeacademy.com/" target="_blank"> Digital Marketing Course</a> to gain hands-on experience with real-world projects!</p>
         
-        <h2>Step 2: Get Hands-On Experience with Live Projects</h2>
+        <h3>Step 2: Get Hands-On Experience with Live Projects</h3>
          
         <p>Theory alone isn’t enough – you need practical experience! Our digital marketing training includes:</p>
 
@@ -146,22 +146,58 @@ export const Blog = [
             </ul>
             <p>Hands-on training ensures that you can confidently apply your skills to businesses or your personal brand.</p>
         </div>
-        <h4 className="inner-title">Step 2: Work on Live Projects & Build a Portfolio</h4>
-        <p>Practical experience is key! Take up small projects, build a blog, or start managing social media pages to showcase your expertise.</p>
-       
-
-        </div>"`
-
-
+        <h3>Step 3: Build Your Portfolio & Personal Brand</h3>
+         
+        <p>If you want to land a high-paying digital marketing job or attract clients as a freelancer, you need a strong portfolio. Here’s how:</p>
+        <div class="event-details-list">
+            <ul class="list-wrap">
+                <li><i class="fas fa-check-circle"></i> Create a Personal Blog or Website: Showcase your knowledge and write case studies.</li>
+                <li><i class="fas fa-check-circle"></i> Work on Real Projects: Help local businesses improve their digital presence.</li>
+                <li><i class="fas fa-check-circle"></i> Optimize Your LinkedIn Profile: Connect with industry professionals and showcase your skills.</li>
+                <li><i class="fas fa-check-circle"></i> Share Your Knowledge on Social Media: Post valuable content on LinkedIn, Twitter, and Instagram.</li>
+                
+            </ul>
+            <p>With the right course, you’ll gain practical skills to build your portfolio and start getting job offers.</p>
+        </div>
+        <h3>Step 4: Get Certified & Apply for Jobs or Freelance Clients</h3>
+        <p>A digital marketing certification helps you stand out in job applications and client pitches. Our course provides a certification upon completion, giving you credibility and proof of expertise.</p>
+        <p>Once certified, you can:</p>
+        <div class="event-details-list">
+            <ul class="list-wrap">
+                <li><i class="fas fa-check-circle"></i> Apply for digital marketing jobs at top companies.</li>
+                <li><i class="fas fa-check-circle"></i> Start freelancing on platforms like Upwork and Fiverr.</li>
+                <li><i class="fas fa-check-circle"></i> Work as a social media manager, SEO expert, or PPC strategist.</li>
+                <li><i class="fas fa-check-circle"></i> Launch your own business using digital marketing strategies.</li>
+                
+            </ul>
+        </div>
+        <h2>Ready to start your Digital Marketing Journey?</h2>
+        <p>Join our expert-led <a href=#>Digital Marketing Course<a> today and start building a successful career!</p>
+        <p>Why Choose Metatron Cube Academy?</p>
+        <p>At Metatron Cube Academy, we provide an industry-relevant digital marketing course designed to make you job-ready. 
+        Here’s what makes us different:</p>
+        <div class="event-details-list">
+            <ul class="list-wrap">
+                <li><i class="fas fa-check-circle"></i> <b>Practical Learning: </b>Real-world projects and hands-on experience.</li>
+                <li><i class="fas fa-check-circle"></i> <b>Expert Trainers: </b>Learn from industry professionals with years of experience.</li>
+                <li><i class="fas fa-check-circle"></i> <b>Affordable Pricing: </b>High-quality training at competitive prices.</li>
+                <li><i class="fas fa-check-circle"></i> <b>Job Assistance: </b>Get support in finding jobs and freelancing clients.</li>
+                <li><i class="fas fa-check-circle"></i> <b>Flexible Learning: </b>Online classes that fit your schedule.</li>
+            </ul>
+        </div>
+        <p>Start Your Digital Marketing Career Today!</p>
+        <p>Visit <a href="https://metatroncubeacademy.com/" target="_blank">Metatron Cube Academy</a> and enroll in our digital marketing course to gain the skills, experience, and certification needed to succeed!</p>
+        <p>Start Learning Now: <a href="https://metatroncubeacademy.com/" target="_blank">Enroll in Our Digital Marketing Course<a></p>
+        `
     },
     {
         "id": 3,
         "slug": "digital-marketing-tips-tricks",
-        "title": "What Leonardo Teach us About Web Design",
+        "title": "Web Development in 2025: A Realistic Guide for Beginners",
         "img": "blog_thumb03.jpg",
         "category": "SKILL DEVELOPMENT",
         "author": "Admin",
-        "date": "25 April 2023",
+        "date": "29 April 2023",
 
         "description": `"<div> <h2>Web Development in 2025: A Realistic Guide for Beginners</h2>
 
@@ -280,7 +316,7 @@ You don't need a computer science degree to become a web developer in 2025. But 
         "img": "blog_thumb03.jpg",
         "category": "SKILL DEVELOPMENT",
         "author": "Admin",
-        "date": "25 April 2023",
+        "date": "13 May 2023",
         "description": `"<div> <h2>Introduction</h2>
         <p>Becoming a web developer in 2025 is more achievable than ever. 
         There are thousands of free tutorials, online communities, and tools that make it easier to learn. 
