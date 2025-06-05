@@ -69,10 +69,10 @@ export default function TestimonialSlider1() {
                             focusOnSelect={true}
                             className="testimonial__content-active testimonial__content-nav">
                             <div className="testimonial__content-item">
-                                <p><p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>  Industry-Driven Curriculum: </b>Learn the latest trends, tools, and strategies.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Practical Hands-On Training: </b>Gain real-world experience with live projects.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Expert Mentors: </b>Get trained by professionals with years of industry experience.</p>
-                                <p><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b> Career Support & Guidance: </b>Assistance to secure jobs, freelance projects, or start your own business.</p></p>
+                                <p><p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Industry-Driven Curriculum: </b>Learn the latest trends, tools, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strategies.</p>
+                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Practical Hands-On Training: </b>Gain real-world experience with &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;live projects.</p>
+                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Expert Mentors: </b>Get trained by professionals with years of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;industry experience.</p>
+                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Career Support & Guidance: </b>Assistance to secure jobs, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;freelance projects, or start your own business.</p></p>
                             </div>
                         </Slider>
                     </div>

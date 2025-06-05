@@ -14,12 +14,14 @@ export default function Categories1() {
                                     </h2>
                                 </div>
                                 <p className="text-left">Are you ready to master the art of digital marketing? Our course covers all the essential elements of online marketing, giving you the skills and confidence to create, implement, and manage successful campaigns. From SEO to social media marketing and everything in between, our curriculum is designed to provide you with a 360-degree understanding of the digital marketing world.</p>
-                                <div className="tg-button-wrap justify-content-start">
-                                    <Link href="/courses" className="btn btn-primary tg-svg" style={{backgroundColor: '#0066FF'}}>
-                                        <span className="text">All Categories</span> 
-                                        <span className="svg-icon" id="svg-6" data-svg-icon="assets/img/icons/btn-arrow.svg">→</span>
-                                    </Link>
-                                </div>
+<div className="tg-button-wrap justify-content-start">
+  <Link href="/courses" className="btn btn-primary tg-svgs">
+    <span className="text">ALL CATEGORIES</span>
+    <span className="svgs-icons">
+      <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+    </span>
+  </Link>
+</div>
                             </div>
                         </div>
                         <div className="col-xl-7 col-lg-9">
@@ -30,17 +32,17 @@ export default function Categories1() {
                                     <div className="col">
                                         <div className="categories__item">
                                             <Link href="/courses">
-                                                <i className="flaticon-graphic-design" />
-                                                <span className="name">Graphic Design</span>
+                                                <i className="flaticon-programming-language" />
+                                                <span className="name">Video Editing
+                                                </span>
                                             </Link>
                                         </div>
                                     </div>
                                     <div className="col">
-                                        <div className="categories__item">
+                                         <div className="categories__item">
                                             <Link href="/courses">
-                                                <i className="flaticon-programming-language" />
-                                                <span className="name">Video Editing
-                                                </span>
+                                                <i className="flaticon-graphic-design" />
+                                                <span className="name">Graphic Design</span>
                                             </Link>
                                         </div>
                                     </div>
