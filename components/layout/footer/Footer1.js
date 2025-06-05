@@ -13,7 +13,7 @@ export default function Footer1() {
                                         <div className="footer__logo">
                                             <Link href="/"><img src="/assets/img/logo/secondary_logo.png" alt="img" /></Link>
                                         </div>
-                                        <p>MetatronCube Academy is an educational initiative of MetatronCube Software Solutions, committed to equipping aspiring professionals with the skills needed to excel in the digital era.</p>
+                                        <p style={{color: "white"}}>MetatronCube Academy is an educational initiative of MetatronCube Software Solutions, committed to equipping aspiring professionals with the skills needed to excel in the digital era.</p>
                                     </div>
                                 </div>
                             </div>
@@ -56,101 +56,33 @@ export default function Footer1() {
                                         <div className="footer__working-item">
                                             <span className="day"><i className="fas fa-clock"></i> Mon - Sat: 9:00 Am to 6:00 Pm</span>
                                         </div>
+                                        <ul className="list-wrap m-0 p-0">
+                                          <li className="socials" style={{ display: 'flex', gap: '30px' }}>
+                                            <Link href="https://www.facebook.com/people/Metatroncube-Academy/61573783917030/" style={{ color: 'white' }}><i className="fab fa-facebook-f" /></Link>
+                                            <Link href="https://x.com/Metatronedu/" style={{ color: 'white' }}><i className="fab fa-twitter" /></Link>
+                                            <Link href="https://www.instagram.com/metatroncube_academy/" style={{ color: 'white' }}><i className="fab fa-instagram" /></Link>
+                                            <Link href="https://www.linkedin.com/company/metatroncube-academy/" style={{ color: 'white' }}><i className="fab fa-linkedin-in" /></Link>
+                                           </li>
+                                        </ul>
+                                    </div>
+                                </div>     
+                                
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="copyright__wrapper">
+                            <div className="container">
+                                <div className="row">
+                                    <div>
+                                        <div className="copyright__text">
+                                            <p>Copyright © {new Date().getFullYear()} <Link href="https://metatroncubeacademy.com">Metatroncubeacademy</Link>. All Rights Reserved.</p>
+                                        </div>
                                     </div>
                                 </div>
-<ul className="list-wrap m-0 p-0" style={{
-  listStyle: 'none',
-  padding: 0,
-  margin: 0,
-  display: 'flex',
-  gap: '12px'
-}}>
-  <li className="socials" style={{
-    display: 'flex',
-    gap: '12px'
-  }}>
-    <Link href="#" style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '32px',
-      height: '32px',
-      backgroundColor: '#0066cc',
-      borderRadius: '50%',
-      color: 'white',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease'
-    }}><i className="fab fa-facebook-f" /></Link>
-    
-    <Link href="#" style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '32px',
-      height: '32px',
-      backgroundColor: '#0066cc',
-      borderRadius: '50%',
-      color: 'white',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease'
-    }}><i className="fab fa-twitter" /></Link>
-    
-    <Link href="#" style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '32px',
-      height: '32px',
-      backgroundColor: '#0066cc',
-      borderRadius: '50%',
-      color: 'white',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease'
-    }}><i className="fab fa-whatsapp" /></Link>
-    
-    <Link href="#" style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '32px',
-      height: '32px',
-      backgroundColor: '#0066cc',
-      borderRadius: '50%',
-      color: 'white',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease'
-    }}><i className="fab fa-linkedin-in" /></Link>
-    
-    <Link href="#" style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '32px',
-      height: '32px',
-      backgroundColor: '#0066cc',
-      borderRadius: '50%',
-      color: 'white',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease'
-    }}><i className="fab fa-youtube" /></Link>
-  </li>
-</ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="copyright__wrapper">
-                    <div className="container">
-                        <div className="row">
-                            <div>
-                                <div className="copyright__text">
-                                    <p>Copyright © {new Date().getFullYear()} <Link href="https://metatroncubeacademy.com">Metatroncubeacademy</Link>. All Rights Reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </>
-    )
-}
+                    </footer>
+                </>
+            )
+        }
