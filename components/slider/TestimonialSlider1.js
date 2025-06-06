@@ -61,20 +61,41 @@ export default function TestimonialSlider1() {
                             <span className="sub-title">Metatroncube Academy</span><h2 className="title tg-svg text-white">why <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" /> Choose Us!</span></h2>
                         </div>
                         <Slider
-                            {...settings2}
-                            asNavFor={nav1}
-                            ref={slider2Ref}
-                            slidesToShow={1}
-                            swipeToSlide={true}
-                            focusOnSelect={true}
-                            className="testimonial__content-active testimonial__content-nav">
-                            <div className="testimonial__content-item">
-                                <p><p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Industry-Driven Curriculum: </b>Learn the latest trends, tools, and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strategies.</p>
-                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Practical Hands-On Training: </b>Gain real-world experience with &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;live projects.</p>
-                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Expert Mentors: </b>Get trained by professionals with years of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;industry experience.</p>
-                                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: '16px' }}><i className="fas fa-check-circle " style={{ color: '#F5B200' }}  /> <b>&nbsp; Career Support & Guidance: </b>Assistance to secure jobs, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;freelance projects, or start your own business.</p></p>
-                            </div>
-                        </Slider>
+  {...settings2}
+  asNavFor={nav1}
+  ref={slider2Ref}
+  slidesToShow={1}
+  swipeToSlide={true}
+  focusOnSelect={true}
+  className="testimonial__content-active testimonial__content-nav">
+  <div className="testimonial__content-item">
+    <div className="feature-line">
+      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+      <div className="text">
+        <b>Industry-Driven Curriculum:</b> Learn the latest trends, tools, and strategies.
+      </div>
+    </div>
+    <div className="feature-line">
+      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+      <div className="text">
+        <b>Practical Hands-On Training:</b> Gain real-world experience with live projects.
+      </div>
+    </div>
+    <div className="feature-line">
+      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+      <div className="text">
+        <b>Expert Mentors:</b> Get trained by professionals with years of industry experience.
+      </div>
+    </div>
+    <div className="feature-line">
+      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+      <div className="text">
+        <b>Career Support & Guidance:</b> Assistance to secure jobs, freelance projects, or start your own business.
+      </div>
+    </div>
+  </div>
+</Slider>
+
                     </div>
                 </div>
             </div>

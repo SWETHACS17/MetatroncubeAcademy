@@ -24,16 +24,14 @@ export default function AboutUs() {
                                             education and industry needs by providing hands-on, career-focused
                                             training.
                                         </p>
-                                       <div className="tg-button-wrap">
-                                        <Link href="/courses" className="btn tg-svg flex items-center gap-2">
-                                            <span className="text">Explore Courses</span>
-                                            <img
-                                            src="/assets/img/icons/btn-arrow.svg"
-                                            alt="arrow icon"
-                                            className="w-4 h-4"
-                                            />
-                                        </Link>
-                                        </div>
+                                       <div className="tg-button-wrap justify-content-start">
+                                            <Link href="/courses" className="btn btn-primary tg-svgs">
+                                                <span className="text">EXPLORE COURSES</span>
+                                                <span className="svgs-icons">
+                                                <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+                                                </span>
+                                            </Link>
+                                            </div>
                                     </div>
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-11">
@@ -136,15 +134,18 @@ export default function AboutUs() {
                                         <p>Metatroncube Academy</p>
                                         <h2 className="title">Join us and become part of a learning revolution where knowledge meets opportunity!</h2>
                                         <div className="banner__btn-wrap" data-aos-delay={800} style={{   display: 'flex',   justifyContent: 'center',   alignItems: 'center',   flexDirection: 'column', }}>
-                                            <div className="tg-button-wrap">
-                                                <Link href="/courses" className="btn tg-svg">
-                                                <span className="" style={{fontWeight: 500, fontSize: '0.85rem'}}>ENROLL NOW <img src="/assets/img/icons/btn-arrow.svg" alt="arrow icon" className="w-4 h-4" style={{paddingLeft: '5px', paddingBottom: '2px'}}/></span>
-                                                </Link>
+                                            <div className="tg-button-wrap justify-content-start">
+                                            <Link href="/courses" className="btn btn-primary tg-svgs">
+                                                <span className="text">ENROLL NOW</span>
+                                                <span className="svgs-icons">
+                                                <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+                                                </span>
+                                            </Link>
                                             </div>
                                             <div className="banner__phone">
                                                 {/* Empty div kept for layout consistency */}
-                                            </div>
-                                            </div>
+                                         </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -159,18 +160,18 @@ export default function AboutUs() {
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
-                                <img src="/assets/img/others/what_makes_us_different.png" alt="img" className="img-fluid " style={{ height: "370px", width: "520px" }} />
+                                <img src="/assets/img/others/what_makes_us_different.png" alt="img" className="img-fluid " style={{ height: "330px", width: "470px",borderRadius:14 }} />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6"><br />
                                 <div className="section__title">
                                     <span className="sub-title">Metatroncube Academy</span>
-                                    <h3 className="title tg-svg">What Makes Us <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Different!</span></h3>
+                                    <h3 className="title tg-svg">What Makes Us <span className="position-relative"><span className="svg-icon" id="about-svg" data-svg-icon="assets/img/icons/title_shape.svg" />Different!</span></h3><br />
                                 </div>
                                 <div className="content">
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  /><b> Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Top-Tier Instructors: </b>Learn from experienced professionals.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
-                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b> Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }}  /><b>&nbsp;&nbsp;&nbsp;Hands-On Learning: </b>Work on real-world projects, not just theory.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b>&nbsp;&nbsp;&nbsp;Top-Tier Instructors: </b>Learn from experienced professionals.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b>&nbsp;&nbsp;&nbsp;Comprehensive Curriculum: </b>Stay ahead with cutting-edge skills.</p>
+                                    <p><i className="fas fa-check-circle " style={{ color: '#007bff' }} /><b>&nbsp;&nbsp;&nbsp;Career-Focused Approach: </b>Get guidance on freelancing, job placements, and entrepreneurship.</p>
                                     <p><b>Join us and take the first step toward a successful digital career!</b></p>
                                 </div>
                             </div>
@@ -182,4 +183,3 @@ export default function AboutUs() {
         </>
     )
 }
-

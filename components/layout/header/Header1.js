@@ -51,7 +51,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                       </Link>
                     </div>
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-xl-flex" style={{ marginLeft: 'auto'  }}>
-                      <ul className="navigation" style={{ display: 'flex', gap: '30px', marginLeft: 'auto' }}>
+                      <ul className="navigation" style={{ display: 'flex', gap: '8px', marginLeft: 'auto',fontSize: '1px'}}>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/about-us">About Us</Link></li>
                         <li className="menu-item-has-children"><Link  href="/courses">Courses</Link>

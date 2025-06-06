@@ -1013,7 +1013,7 @@ textarea {
     line-height: 1;
     color: var(--tg-theme-primary);
     display: none;
-    margin-top: 8px;
+    margin-top: 1px;
 }
 
 @media (max-width: 1199.98px) {
@@ -1028,7 +1028,7 @@ textarea {
 
 @media (max-width: 1199.98px) {
     .tg-header__area.sticky-menu {
-        padding: 20px 0;
+        padding: 1px 0;
     }
 }
 
@@ -6394,6 +6394,28 @@ textarea {
         bottom: 31%;
     }
 }
+
+.feature-line {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  color: #fff; /* optional, for contrast on dark bg */
+}
+
+.feature-line .icon {
+  flex-shrink: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 2px; /* adjusts alignment with text top */
+}
+
+.feature-line .text {
+  line-height: 1.7;
+}
+
 
 /*=============================
     12. Instructor
