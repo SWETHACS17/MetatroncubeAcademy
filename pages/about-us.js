@@ -36,18 +36,24 @@ export default function AboutUs() {
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-11">
                                     <div className="about__images-wrap">
-                                        <div className="column" style={{marginLeft: '2px', marginTop: '45px',}}>
+                                        <div className="column" style={{marginLeft: '2px', marginTop: '45px', position: 'relative', zIndex: 2 }}>
                                             <img src="/assets/img/others/about_img03.jpg" alt="img" style={{height: '360px', width: '270px'}}/>
                                         </div>
-                                        <div className="column">
+                                        <div className="column" style={{ position: 'relative', zIndex: 2 }}>
                                             <img src="/assets/img/others/about_img04.png" alt="img" style={{height: '240px', width: '230px'}}/>
                                             <img src="/assets/img/others/about_img05.jpg" alt="img" style={{width: '230px'}}/>
                                         </div>
                                         <div className="about__shapes">
-                                            <img src="/assets/img/objects/about_shape01.png" alt="img" className="lol_1" data-aos="fade-down-left" style={{height: '110px', width: '110px'}}/>
-                                            <img src="/assets/img/objects/about_shape02.png" alt="img" className="lol_2" data-aos="fade-up-right" style={{height: '100px', width: '100px'}}/>
-                                            <img src="/assets/img/objects/about_shape03.png" alt="img" className="lol-3 rotateme" style={{height: '120px', width: '120px'}}/>
+                                             <div className="about__shapes" style={{ position: 'absolute', bottom: '0', left: '-8%',zIndex: 1  }}>
+                                            <img src="/assets/img/objects/about_shape01.png" alt="img" className="lol_1" data-aos="fade-down left" style={{height: '110px', width: '110px'}}/>
+                                            </div>
+                                            <div className="about__shapes" style={{ position: 'absolute', top:'-7%', left:'89%' }}>
+                                             <img src="/assets/img/objects/about_shape02.png" alt="img" className="lol_2" data-aos="fade-up-right" style={{height: '90px', width: '90px'}}/>
+                                            </div>                     
+                                       <div className="about__shapes" style={{ position: 'absolute', top: '94%', left: '94%', transform: 'translate(-50%, -50%)' }}>
+                                        <img src="/assets/img/objects/about_shape03.png" alt="img" className="lol-3 rotateme" style={{height: '120px', width: '120px'}}/>
                                         </div>
+                                     </div>
                                     </div>
                                 </div>
                             </div>
