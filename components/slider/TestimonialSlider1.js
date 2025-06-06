@@ -61,41 +61,40 @@ export default function TestimonialSlider1() {
                             <span className="sub-title">Metatroncube Academy</span><h2 className="title tg-svg text-white">why <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" /> Choose Us!</span></h2>
                         </div>
                         <Slider
-  {...settings2}
-  asNavFor={nav1}
-  ref={slider2Ref}
-  slidesToShow={1}
-  swipeToSlide={true}
-  focusOnSelect={true}
-  className="testimonial__content-active testimonial__content-nav">
-  <div className="testimonial__content-item">
-    <div className="feature-line">
-      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
-      <div className="text">
-        <b>Industry-Driven Curriculum:</b> Learn the latest trends, tools, and strategies.
-      </div>
-    </div>
-    <div className="feature-line">
-      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
-      <div className="text">
-        <b>Practical Hands-On Training:</b> Gain real-world experience with live projects.
-      </div>
-    </div>
-    <div className="feature-line">
-      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
-      <div className="text">
-        <b>Expert Mentors:</b> Get trained by professionals with years of industry experience.
-      </div>
-    </div>
-    <div className="feature-line">
-      <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
-      <div className="text">
-        <b>Career Support & Guidance:</b> Assistance to secure jobs, freelance projects, or start your own business.
-      </div>
-    </div>
-  </div>
-</Slider>
-
+                          {...settings2}
+                          asNavFor={nav1}
+                          ref={slider2Ref}
+                          slidesToShow={1}
+                          swipeToSlide={true}
+                          focusOnSelect={true}
+                          className="testimonial__content-active testimonial__content-nav" >
+                          <div className="testimonial__content-item" style={{fontSize:"16px", lineHeight: "1.6"}}>
+                            <div className="feature-line">
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text" style={{fontSize: "15px"}}>
+                                <b>Industry-Driven Curriculum:</b> Learn the latest trends, tools, and strategies.
+                              </div> 
+                            </div> 
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Practical Hands-On Training:</b> Gain real-world experience with live projects.
+                              </div>
+                            </div>
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Expert Mentors:</b> Get trained by professionals with years of industry experience.
+                              </div>
+                            </div>
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Career Support & Guidance:</b> Assistance to secure jobs, freelance projects, or start your own business.
+                              </div>
+                            </div>
+                          </div>
+                        </Slider>
                     </div>
                 </div>
             </div>
