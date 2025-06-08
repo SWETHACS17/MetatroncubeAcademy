@@ -69,9 +69,7 @@ export default function Banner1() {
             bgImage: "banner_img_2.png"
         },
     ];
-
     const current = banners[activeIndex];
-
     return (
         <>
             <style jsx>{`
@@ -136,8 +134,7 @@ export default function Banner1() {
                         backgroundRepeat: "no-repeat",
                         zIndex: 0,
                         transition: "background-image 0.5s ease-in-out"
-                    }}
-                >
+                    }}>
                     <div
                         style={{
                             position: "absolute",

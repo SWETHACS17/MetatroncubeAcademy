@@ -34,7 +34,7 @@ export default function Footer1() {
                                     <h4 className="fw-title">Courses</h4>
                                     <ul className="list-wrap">
                                         <li><Link href="#">Video Editing</Link></li>
-                                        <li><Link href="#">Graphic Design</Link></li>
+                \                    <li><Link href="#">Graphic Design</Link></li>
                                         <li><Link href="#">Digital Marketing</Link></li>
                                         <li><Link href="#">Web Development</Link></li>
                                         <li><Link href="#">Ecommerce Development</Link></li>                                    </ul>
