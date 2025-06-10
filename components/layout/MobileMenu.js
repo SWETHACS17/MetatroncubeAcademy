@@ -44,7 +44,7 @@ export default function MobileMenu({ handleMobileMenu = () => {} }) {
                         <li><Link href="/graphic-design" onClick={handleLinkClick}>Graphic Design</Link></li>
                         <li><Link href="/digital-marketing" onClick={handleLinkClick}>Digital Marketing</Link></li>
                         <li><Link href="/web-development" onClick={handleLinkClick}>Web Development</Link></li>
-                        <li><Link href="/ecommerce-development" onClick={handleLinkClick}>E-Commerce Development</Link></li>
+                        <li><Link href="/e-commerce-development" onClick={handleLinkClick}>E-Commerce Development</Link></li>
                         <li><Link href="/course-details" onClick={handleLinkClick}>Course Details</Link></li>
                     </ul>
                     <div 

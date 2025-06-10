@@ -2,6 +2,7 @@ import VideoPopup from "@/components/elements/VidepPopup"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import Head from "next/head"
 
 export default function VideoEditing() {
     const [activeIndex, setActiveIndex] = useState(1)
@@ -28,6 +29,10 @@ export default function VideoEditing() {
     }
     return (
         <>
+            <Head>
+                <link rel="stylesheet" href="/styles/course-cards.css" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
             <Layout headerStyle={3} footerStyle={1}>
                 <section className="courses__breadcrumb-area">
                     <div className="container">
@@ -40,7 +45,7 @@ export default function VideoEditing() {
                                     <ul className="courses__item-meta list-wrap">
                                         <li>
                                             <div className="author">
-                                                <Link href="#"><img src="/assets/img/courses/course_author02.png" alt="img" /></Link>
+                                                <Link href="#"><img src="/assets/img/courses/empty-logo.jpg" alt="img" style={{height:'43px'}}/></Link>
                                                 <Link href="#">by Team Metatroncube Academy</Link>
                                             </div>
                                         </li>
@@ -67,7 +72,7 @@ export default function VideoEditing() {
                     <div className="container">
                         <img src="/assets/img/courses/web-development-1.jpg" alt="img" className="courses-details-bg"  style={{marginTop:'55px', height:'500px'}} />
                         <div className="row">
-                            <div className="col-xl-9 col-lg-8">
+                            <div className="col-xl-9 col-lg-8 order-lg-1 order-2">
                                 <div className="courses__details-wrapper">
                                     <ul className="nav nav-tabs" id="myTab" role="tablist">
                                         <li className="nav-item" onClick={() => handleOnClick(1)}>
@@ -86,24 +91,24 @@ export default function VideoEditing() {
                                     <div className="tab-content" id="myTabContent">
                                         <div className={activeIndex === 1 ? "tab-pane active" : "tab-pane"}>
                                             <div className="courses__details-content">
-                                                <h6>Shape the Future of the Web!</h6>
+                                                <h6>Shape the Future of the Web!</h6><br />
                                                 <p>Learn to design and develop high-performance websites and applications using the latest industry technologies. Whether you aim to become a full-stack developer, front-end expert, or back-end specialist, this course equips you with hands-on experience.</p>
                                                 <ui>
                                                     <li>From Beginner to Pro – Code Your Way to Success!</li>
                                                     <li>Craft Stunning Websites & High-Performance Apps!</li>
                                                     <li>Master the Tech Behind the Digital World!</li>
-                                                </ui>
+                                                </ui><br />
                                                 <h6>Turn Your Ideas into Reality – Start Learning Today!</h6>
                                                 <div className="courses__details-inner">
                                                     <h3 className="title">What Will You Learn?</h3>
                                                     <div className="event-details-list">
                                                         <ul className="list-wrap">
-                                                            <li><i className="fas fa-check-circle" />Full Stack Development – Front-end & Back-end mastery</li>
-                                                            <li><i className="fas fa-check-circle" />HTML, CSS, JavaScript – The foundation of web design</li>
-                                                            <li><i className="fas fa-check-circle" />React, Angular – Build dynamic and interactive UIs</li>
-                                                            <li><i className="fas fa-check-circle" />Node.js, Python – Power up your back-end development</li>
-                                                            <li><i className="fas fa-check-circle" />WordPress & Wix – Create websites with no coding</li>
-                                                            <li><i className="fas fa-check-circle" />Database & API Integration – Build scalable web apps</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />Full Stack Development – Front-end & Back-end mastery</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />HTML, CSS, JavaScript – The foundation of web design</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />React, Angular – Build dynamic and interactive UIs</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />Node.js, Python – Power up your back-end development</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />WordPress & Wix – Create websites with no coding</li>
+                                                            <li style={{fontSize:'17px'}}><i className="fas fa-check-circle" />Database & API Integration – Build scalable web apps</li>
                                                         </ul>
                                                     </div>
                                                 </div> 
@@ -112,7 +117,7 @@ export default function VideoEditing() {
                                         </div>
                                         <div className={activeIndex === 3 ? "tab-pane active" : "tab-pane"}>
                                             <div className="courses__details-reviews">
-                                                <h4 className="title">Student Ratings  Reviews</h4>
+                                                <h4 className="title">Student Ratings & Reviews</h4>
                                                 <div className="course-rate">
                                                     <div className="course-rate__summary">
                                                         <div className="course-rate__summary-value">4.8</div>
@@ -235,12 +240,15 @@ export default function VideoEditing() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-4 " style={{marginTop:'-500px'}}>
-                                <aside className="courses__details-sidebar">
+                            <div className="col-xl-3 col-lg-4 order-lg-2 order-1" >
+                                <aside className="courses__details-sidebar" style={{marginTop:'-860px', position:'sticky', top:'100px'}}>
                                     <div className="event-widget">  
                                         <div className="event-cost-wrap">
                                             <h4 className="price"><strong></strong>₹20,000 <span>₹30,000</span></h4>
-                                            <Link href="#" className="btn">Add to Cart</Link>
+                                            <Link href="#" className="btn" style={{backgroundColor:'#3956D9'}}>
+                                                <img src="/assets/img/objects/cart2.png" alt="cart" className="cart-icon" />
+                                                Add to Cart
+                                            </Link>
                                            <div>
                                             <ul className="list-wrap" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                                 <li style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px',fontSize:'15px' }}>
@@ -259,18 +267,18 @@ export default function VideoEditing() {
                                             </div>
                                         </div>
                                     </div>
-                                   <div className="blog-widget" style={{ border: '1px solid #ddd', borderRadius: '6px', padding: '16px' }}>
-                                    <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '12px' }}>
+                                   <div className="course-by-widget">
+                                    <h4 className="course-by-title">
                                         A course by
                                     </h4>
 
-                                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                        <img src="/assets/img/others/TM.png" alt="img" style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
+                                    <div className="course-by-content">
+                                        <img src="/assets/img/others/TM.png" alt="img" className="course-by-logo" />
 
-                                        <div style={{ lineHeight: '1.6', fontWeight: '800', color: '#2D61AD', fontSize: '19px', marginLeft:'8px' }}>
-                                        <div>Team</div>
-                                        <div>Metatroncube</div>
-                                        <div>Academy</div>
+                                        <div className="course-by-name"  style={{color:'#3C5A8D'}}>
+                                            <div>Team</div>
+                                            <div>Metatroncube</div>
+                                            <div>Academy</div>
                                         </div>
                                     </div>
                                     </div>
@@ -278,8 +286,108 @@ export default function VideoEditing() {
                             </div>
                         </div>
                     </div>
+                      <div className="container" style={{marginTop:'100px'}}>
+                        <div className="section__title">
+                            <span className="sub-title">Top courses</span>
+                        </div>
+                    </div>
+                    <div style={{ fontFamily: "'Poppins', sans-serif", backgroundColor: "#fff", padding: "50px 20px" }}>
+                        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+                            <div className="courses-header-container">
+                                <div>
+                                    <h2 style={{ fontSize: "32px", color: "#0D0E43", fontWeight: 700, marginBottom: "1px", marginTop: '-50px', marginLeft:'20px' }}>
+                                        More Courses By
+                                    </h2>
+                                    <h2 style={{ color:'#1366e3',  fontSize: "32px", fontWeight: 700, position: "relative", display: "inline-block", marginBottom: "40px", marginLeft:'20px' }}>
+                                        Team Metatroncube Academy
+                                        <span style={{ position: "absolute", bottom: "-5px", left: 0, width: "100%", height: "10px", background: "url('/assets/yellow-underline.png') no-repeat center bottom", backgroundSize: "contain" }} />
+                                    </h2>
+                                </div>
+                                <div className="explore-courses-btn">
+                                    <Link href="/courses" className="btn btn-primary tg-svgs">
+                                        <span className="text">VIEW ALL COURSES</span>
+                                        <span className="svgs-icons">
+                                            <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
+                            
+                            <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+                                {[
+                                    {
+                                        title: "Graphic Design",
+                                        category: "Design",
+                                        price: 20000,
+                                        oldPrice: 30000,
+                                        image: "/assets/img/courses/graphic-design-1.jpg",
+                                    },
+                                    {
+                                        title: "Video Editing",
+                                        category: "Videography",
+                                        price: 30000,
+                                        oldPrice: 50000,
+                                        image: "/assets/img/courses/e-commerce.jpg",
+                                    },
+                                    {
+                                        title: "Digital Marketing",
+                                        category: "Digital Marketing",
+                                        price: 30000,
+                                        oldPrice: 50000,
+                                        image: "/assets/img/courses/digital-marketing.jpg",
+                                    },
+                                ].map((course, idx) => (
+                                    <div key={idx} className="course-card">
+                                        <div className="course-card-image-container">
+                                            <img
+                                                src={course.image}
+                                                alt={course.title}
+                                                className="course-card-image"
+                                            />
+                                          
+                                        </div>
+                                         
+                                          <div className="course-logo-overlay">
+                                                <img src="/assets/img/courses/empty-logo.jpg" alt="logo" />
+                                            </div>
+                                          <div className="course-category">
+                                                {course.category}
+                                            </div>
+                                        <div style={{ padding: "20px" }}>
+                                            <h3 className="course-card-title">
+                                                {course.title}
+                                            </h3>
+                                          
+                                            <div className="course-card-meta">
+                                                <span className="course-card-meta-item">
+                                                    <i className="flaticon-file" style={{ marginRight: "5px" }} /> 0
+                                                </span>
+                                                <span className="course-card-meta-item">
+                                                    <i className="flaticon-user-1" style={{ marginRight: "5px" }} /> 0
+                                                </span>
+                                            </div>
+                                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                                <div className="course-card-price">
+                                                    <span style={{ color: "#3554D1", fontWeight: 700, fontSize: "16px" }}>
+                                                        ₹{course.price.toLocaleString("en-IN")}.00
+                                                    </span>
+                                                    <br />
+                                                    <span style={{ textDecoration: "line-through", color: "#9CA3AF", fontSize: "14px" }}>
+                                                        ₹{course.oldPrice.toLocaleString("en-IN")}.00
+                                                    </span>
+                                                </div>
+                                                <button className="add-to-cart-btn">
+                                                    <img src="/assets/img/objects/cart.png" alt="cart" className="cart-icon" />
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
             </Layout>
         </>
     )

@@ -25,7 +25,7 @@ export default function Footer1() {
                                         <li><Link href="/contact">Contact</Link></li>
                                         <li><Link href="#">Privacy Policy</Link></li>
                                         <li><Link href="#">Terms and Conditions</Link></li>
-                                        <li><Link href="#">Blog</Link></li>
+                                        <li><Link href="/blogs">Blog</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -33,11 +33,12 @@ export default function Footer1() {
                                 <div className="footer-widget widget_nav_menu">
                                     <h4 className="fw-title">Courses</h4>
                                     <ul className="list-wrap">
-                                        <li><Link href="#">Video Editing</Link></li>
-                \                    <li><Link href="#">Graphic Design</Link></li>
-                                        <li><Link href="#">Digital Marketing</Link></li>
-                                        <li><Link href="#">Web Development</Link></li>
-                                        <li><Link href="#">Ecommerce Development</Link></li>                                    </ul>
+                                        <li><Link href="/video-editing">Video Editing</Link></li>
+                                    <li><Link href="/graphic-design">Graphic Design</Link></li>
+                                        <li><Link href="/digital-marketing">Digital Marketing</Link></li>
+                                        <li><Link href="/web-development">Web Development</Link></li>
+                                        <li><Link href="/e-commerce-development">Ecommerce Development</Link></li>
+                                         </ul>
                                 </div>
                             </div>
                             <div className="col-xl-3 col-lg-4 col-sm-6">

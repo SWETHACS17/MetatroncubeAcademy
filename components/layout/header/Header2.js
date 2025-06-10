@@ -18,10 +18,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
               <div className="col-md-6 d-none d-md-block">
                 <ul className="tg-header__top-social list-wrap">
                   <li>Follow Us On:</li>
-                  <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                  <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                  <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                  <li><Link href="#"><i className="fab fa-youtube" /></Link></li>
+                  <li><Link href="https://www.facebook.com/people/Metatroncube-Academy/61573783917030/"><i className="fab fa-facebook-f" /></Link></li>
+                  <li><Link href="https://x.com/Metatronedu/"><i className="fab fa-twitter" /></Link></li>
+                  <li><Link href="https://www.linkedin.com/company/metatroncube-academy/"><i className="fab fa-linkedin-in" /></Link></li>
+                  <li><Link href="https://www.instagram.com/metatroncube_academy/"><i className="fab fa-instagram" /></Link></li>
                 </ul>
               </div>
               
@@ -29,9 +29,9 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
               <div className="col-12 d-md-none text-center">
                 <ul className="tg-header__top-social list-wrap" style={{ justifyContent: 'center' }}>
                   <li>Follow Us:</li>
-                  <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                  <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                  <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                  <li><Link href="https://www.facebook.com/people/Metatroncube-Academy/61573783917030/"><i className="fab fa-facebook-f" /></Link></li>
+                  <li><Link href="https://x.com/Metatronedu/"><i className="fab fa-twitter" /></Link></li>
+                  <li><Link href="https://www.instagram.com/metatroncube_academy/"><i className="fab fa-instagram" /></Link></li>
                 </ul>
               </div>
             </div>
@@ -56,11 +56,11 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                         <li><Link href="/about-us">About Us</Link></li>
                         <li className="menu-item-has-children"><Link  href="/courses">Courses</Link>
                           <ul className="sub-menu" style={{ minWidth: "260px" }}>
-                           <li><Link href="">Video Editing</Link></li>
-                           <li><Link href="">Graphic Design</Link></li>
-                           <li><Link href="">Digital Marketing</Link></li>
-                           <li><Link href="">Web Development</Link></li>
-                           <li><Link href="">E-Commerce Development</Link></li>
+                           <li><Link href="/video-editing">Video Editing</Link></li>
+                           <li><Link href="/graphic-design">Graphic Design</Link></li>
+                           <li><Link href="/digital-marketing">Digital Marketing</Link></li>
+                           <li><Link href="/web-development">Web Development</Link></li>
+                           <li><Link href="/e-commerce-development">E-Commerce Development</Link></li>
                             <li><Link href="/course-details">Course Details</Link></li>
                           </ul>
                         </li>
@@ -95,10 +95,10 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                           margin: 0,
                           padding: 0
                       }}>
-                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                        <li><Link href="https://www.facebook.com/people/Metatroncube-Academy/61573783917030/"><i className="fab fa-facebook-f" /></Link></li>
+                        <li><Link href="https://x.com/Metatronedu/"><i className="fab fa-twitter" /></Link></li>
+                        <li><Link href="https://www.instagram.com/metatroncube_academy/"><i className="fab fa-instagram" /></Link></li>
+                        <li><Link href="https://www.linkedin.com/company/metatroncube-academy/"><i className="fab fa-linkedin-in" /></Link></li>
                       </ul>
                     </div>
                   </nav>
