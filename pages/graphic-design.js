@@ -247,7 +247,7 @@ export default function VideoEditing() {
                                 <aside className="courses__details-sidebar" style={{marginTop:'-860px', position:'sticky', top:'100px'}}>
                                     <div className="event-widget">  
                                         <div className="event-cost-wrap">
-                                            <h4 className="price"><strong></strong>₹20,000 <span>₹30,000</span></h4>
+                                            <h4 className="price" style={{ fontFamily: 'Roboto, sans-serif' }} ><strong></strong>₹20,000 <span>₹30,000</span></h4>
                                             <Link href="#" className="btn" style={{backgroundColor:'#3956D9'}}>
                                                 <img src="/assets/img/objects/cart2.png" alt="cart" className="cart-icon" />
                                                 Add to Cart
@@ -319,15 +319,15 @@ export default function VideoEditing() {
                             <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
                                 {[
                                     {
-                                        title: "Graphic Design",
-                                        category: "Design",
+                                        title: "Video Editing",
+                                        category: "Videography",                                 
                                         price: 20000,
                                         oldPrice: 30000,
-                                        image: "/assets/img/courses/graphic-design-1.jpg",
+                                        image: "/assets/img/courses/video-editing.jpg",
                                     },
                                     {
-                                        title: "Video Editing",
-                                        category: "Videography",
+                                        title: "E-commerce Development",
+                                        category: "E-commerce",
                                         price: 30000,
                                         oldPrice: 50000,
                                         image: "/assets/img/courses/e-commerce.jpg",
@@ -369,8 +369,8 @@ export default function VideoEditing() {
                                                     <i className="flaticon-user-1" style={{ marginRight: "5px" }} /> 0
                                                 </span>
                                             </div>
-                                            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                                <div className="course-card-price">
+                                            <div style={{  display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                                <div className="price" style={{fontFamily:'Roboto, sans-serif'}}>
                                                     <span style={{ color: "#3554D1", fontWeight: 700, fontSize: "16px" }}>
                                                         ₹{course.price.toLocaleString("en-IN")}.00
                                                     </span>

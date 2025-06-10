@@ -247,7 +247,7 @@ export default function VideoEditing() {
                                 <aside className="courses__details-sidebar" style={{marginTop:'-860px', position:'sticky', top:'100px'}}>
                                     <div className="event-widget">  
                                         <div className="event-cost-wrap">
-                                            <h4 className="price"><strong></strong>₹20,000 <span>₹30,000</span></h4>
+                                            <h4 className="price" style={{ fontFamily: 'Roboto, sans-serif' }}><strong></strong>₹20,000 <span>₹30,000</span></h4>
                                             <Link href="#" className="btn" style={{backgroundColor:'#3956D9'}}>
                                                 <img src="/assets/img/objects/cart2.png" alt="cart" className="cart-icon" />
                                                 Add to Cart
@@ -328,9 +328,9 @@ export default function VideoEditing() {
                                     {
                                         title: "Video Editing",
                                         category: "Videography",
-                                        price: 30000,
-                                        oldPrice: 50000,
-                                        image: "/assets/img/courses/e-commerce.jpg",
+                                        price: 20000,
+                                        oldPrice: 30000,
+                                        image: "/assets/img/courses/video-editing.jpg",
                                     },
                                     {
                                         title: "Digital Marketing",
