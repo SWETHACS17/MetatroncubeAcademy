@@ -45,7 +45,7 @@ export default function MobileMenu({ handleMobileMenu = () => {} }) {
                         <li><Link href="/digital-marketing" onClick={handleLinkClick}>Digital Marketing</Link></li>
                         <li><Link href="/web-development" onClick={handleLinkClick}>Web Development</Link></li>
                         <li><Link href="/e-commerce-development" onClick={handleLinkClick}>E-Commerce Development</Link></li>
-                        <li><Link href="/course-details" onClick={handleLinkClick}>Course Details</Link></li>
+                       
                     </ul>
                     <div 
                         className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} 

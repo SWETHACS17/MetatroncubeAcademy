@@ -61,7 +61,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu }) {
                            <li><Link href="/digital-marketing">Digital Marketing</Link></li>
                            <li><Link href="/web-development">Web Development</Link></li>
                            <li><Link href="/e-commerce-development">E-Commerce Development</Link></li>
-                            <li><Link href="/course-details">Course Details</Link></li>
+                           
                           </ul>
                         </li>
                         <li><Link href="/contact">Contact</Link></li>
