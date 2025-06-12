@@ -45,40 +45,55 @@ export default function TestimonialSlider1() {
             <div className="row align-items-xl-center">
                 <div className="col-lg-5 col-md-7 col-sm-9">
                     <div className="testimonial__image-wrapper position-relative">
-                        <Slider {...settings1} asNavFor={nav2} ref={slider1Ref} className="testimonial__image-active">
-                            <div className="testimonial__image-item">
-                                <img src="/assets/img/others/testimonial01.jpg" alt="img" />
+                        <Slider {...settings1} asNavFor={nav2} ref={slider1Ref}>
+                            <div>
+                                <img src="/assets/img/others/testimonial01.png" alt="img" className="testimonialImage" />
                             </div>
-                            <div className="testimonial__image-item">
-                                <img src="/assets/img/others/testimonial02.jpg" alt="img" />
+                            <div>
+                                <img src="/assets/img/others/testimonial01.png" alt="img" className="testimonialImage" />
                             </div>
                         </Slider>
-                        <div className="testimonial__shapes">
-                            <img src="/assets/img/objects/testi_shape01.svg" alt="shape" data-aos="fade-up-left" data-aos-delay={300} />
-                            <img src="/assets/img/objects/testi_shape02.svg" alt="shape" data-aos="fade-up-right" data-aos-delay={300} />
-                            <img src="/assets/img/objects/testi_shape03.svg" alt="shape" className="rotateme" />
-                        </div>
                     </div>
                 </div>
                 <div className="col-lg-7">
                     <div className="testimonial__content-wrapper">
-                        <div className="section__title white-title mb-40">
-                            <h2 className="title tg-svg">Why <span className="position-relative"><span className="svg-icon" id="svg-7" data-svg-icon="assets/img/icons/title_shape.svg" />Choose Us!</span><br /></h2>
+                                  <div className="section__title">
+                            <span className="sub-title">Metatroncube Academy</span><h2 className="title tg-svg text-white">why <span className="position-relative"><span className="svg-icon" id="svg-5" data-svg-icon="assets/img/icons/title_shape.svg" /> Choose Us!</span></h2>
                         </div>
                         <Slider
-                            {...settings2}
-                            asNavFor={nav1}
-                            ref={slider2Ref}
-                            slidesToShow={1}
-                            swipeToSlide={true}
-                            focusOnSelect={true}
-                            className="testimonial__content-active testimonial__content-nav">
-                            <div className="testimonial__content-item">
-                                <p><p>✓ Industry-Driven Curriculum: Learn the latest trends, tools, and strategies.</p>
-                                <p>✓ Practical Hands-On Training: Gain real-world experience with live projects.</p>
-                                <p>✓ Expert Mentors: Get trained by professionals with years of industry experience.</p>
-                                <p>✓ Career Support & Guidance: Assistance to secure jobs, freelance projects, or start your own business.</p></p>
+                          {...settings2}
+                          asNavFor={nav1}
+                          ref={slider2Ref}
+                          slidesToShow={1}
+                          swipeToSlide={true}
+                          focusOnSelect={true}
+                          className="testimonial__content-active testimonial__content-nav" >
+                          <div className="testimonial__content-item" style={{fontSize:"16px", lineHeight: "1.6"}}>
+                            <div className="feature-line">
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text" style={{fontSize: "15px"}}>
+                                <b>Industry-Driven Curriculum:</b> Learn the latest trends, tools, and strategies.
+                              </div> 
+                            </div> 
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Practical Hands-On Training:</b> Gain real-world experience with live projects.
+                              </div>
                             </div>
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Expert Mentors:</b> Get trained by professionals with years of industry experience.
+                              </div>
+                            </div>
+                            <div className="feature-line"  style={{fontSize: "15px"}}>
+                              <span className="icon"><i className="fas fa-check-circle" style={{ color: '#F5B200' }} /></span>
+                              <div className="text">
+                                <b>Career Support & Guidance:</b> Assistance to secure jobs, freelance projects, or start your own business.
+                              </div>
+                            </div>
+                          </div>
                         </Slider>
                     </div>
                 </div>
@@ -86,5 +101,6 @@ export default function TestimonialSlider1() {
         </>
     )
 };
+
 
 

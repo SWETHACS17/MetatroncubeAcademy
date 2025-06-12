@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function About1() {
     return (
         <>
-            <section className="about-area tg-motion-effects section-py-120">
+            <section className="about-area tg-motion-effects section-py-120" style={{ backgroundColor: '#FAFAFA' }}>
                 <div className="container">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-xl-6 col-lg-8">
@@ -30,9 +30,14 @@ export default function About1() {
                                     <h2 className="title tg-svg">Empowering Future <span className="position-relative"><span className="svg-icon" id="svg-3" data-svg-icon="assets/img/icons/title_shape.svg" />Innovators</span></h2>
                                 </div>
                                 <p className="desc">Welcome to Metatron Cube Academy – your gateway to mastering the most in-demand digital skills! We offer expert-led, hands-on training in Web Development, Graphic Design, Video Editing, E-commerce Development, and Digital Marketing. Whether you’re a student, freelancer, or entrepreneur, our courses are designed to help you gain real-world expertise and accelerate your career growth.</p>
-                                <div className="tg-button-wrap">
-                                    <Link href="/about-us" className="btn tg-svg"><span className="text">DIVE DEEPER</span> <span className="svg-icon" id="about-btn" data-svg-icon="assets/img/icons/btn-arrow.svg" /></Link>
-                                </div>
+                                  <div className="tg-button-wrap justify-content-start">
+                          <Link href="/about-us" className="btn btn-primary tg-svgs">
+                              <span className="text">DIVE DEEPER</span>
+                              <span className="svgs-icons">
+                              <img src="/assets/img/icons/btn-arrow.svg" alt="arrow" />
+                              </span>
+                          </Link>
+                          </div>
                             </div>
                         </div>
                     </div>
@@ -41,3 +46,4 @@ export default function About1() {
         </>
     )
 }
+                                                             

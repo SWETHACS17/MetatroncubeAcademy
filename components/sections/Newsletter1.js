@@ -1,53 +1,66 @@
-export default function Newsletter1() {
-    return (
-        <section className="newsletter-area section-py-55">
-            <div className="container">
-                <div className="row align-items-center justify-content-center">
-                    <div className="col-xl-6 col-lg-5">
-                        <div className="newsletter__img-wrap">
-                            <div className="newsletter__img">
-                                <img src="/assets/img/others/contact.png" alt="Contact illustration" height={200} width={700} />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-6 col-lg-7">
-                        <div className="newsletter__form">
-                            <form action="#">
-                                <div className="newsletter__form-content">
-                                    <div className="form-group">
-                                        <p>Name</p>
-                                        <input type="text" id="name" placeholder="Your Name" required />
-                                    </div> <br />
-                                    <div className="form-group">
-                                        <p>Email</p>
-                                        <input type="text" id="email" placeholder="Your email" required />
-                                    </div><br />
-                                    <div className="form-group">
-                                        <p>Phone Number</p>
-                                        <input type="tel" id="phone" placeholder="" />
-                                    </div><br />
-                                    <div className="form-group">
-                                        <p>Your Message</p>
-                                        <textarea id="message" rows="4" placeholder="" required></textarea>
-                                    </div><br />
-                                    <div className="form-group">
-                                        <p>20-5=?</p>
-                                        <input type="text" id="captcha" placeholder="" required />
-                                    </div><br />
+// pages/contact.js
+import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 
-                                    {/*
-                                    <div className="form-submit">
-                                        <button type="submit" className="submit-btn">SUBMIT</button>
-                                    </div>
+export default function ContactForm() {
+  const imageRef = useRef(null);
 
-                                    */}
-                                    
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('image-visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
     );
-}
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observer.unobserve(imageRef.current);
+      }
+    };
+  }, []);
+
+  return (
+    <div className="contact-container">
+      {/* Left Image Section */}
+      <div ref={imageRef} className="contact-image">
+        <Image
+          src="/assets/img/others/contact.png"
+          alt="Contact Illustration"
+          width={500}
+          height={500}
+          className="responsive-image"
+        />
+      </div>
+
+      {/* Right Form Section */}
+      <div className="contact-form">
+       
+
+        <input type="text" placeholder="Your Name" className="form-input" />
+        <input type="email" placeholder="Your Email" className="form-input" />
+        <input type="text" placeholder="Phone Number" className="form-input" />
+        <textarea
+          placeholder="Your Message"
+          rows="5"
+          className="form-input message-input"
+        />
+        <input type="text" placeholder="four+6=?" className="form-input" />
+        <button className="submit-button" style={{fontFamily: 'Montserrat, sans-serif'}}>SUBMIT</button>
+      </div>
+    </div>
+  );
+
+
+};
+
+
+  

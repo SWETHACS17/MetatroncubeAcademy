@@ -1,6 +1,277 @@
-@charset "UTF-8";
+/* Global shine underline styles */
+
+                    @keyframes slideIn {
+                        0% {
+                            transform: translateX(-50px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideDown {
+                        0% {
+                            transform: translateY(-100px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                    @keyframes slideRight {
+                        0% {
+                            transform: translateX(-200px);
+                            opacity: 0;
+                        }
+                        100% {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    .slide-text {
+                        animation: slideIn 1.5s ease-out forwards;
+                    }
+
+                    /* Mobile and split screen styles */
+                    @media (max-width: 1199px) {
+                        .banner__content {
+                            text-align: left !important;
+                            padding-left: 15px;
+                        }
+                        
+                        .slider_shape1-image {
+                            max-width: 80px !important;
+                            left: 15px !important;
+                            top: 20px !important;
+                        }
+                        
+                        .slider-shape-image {
+                            max-width: 250px !important;
+                            bottom: 9% !important;
+                            z-index: 0 !important;
+                        }
+                        
+                        .banner-area .container {
+                            padding-left: 0;
+                        }
+                        
+                        .banner__btn-wrap {
+                            justify-content: flex-start !important;
+                            padding-left: 0 !important;
+                            margin-top: 10px !important;
+                        }
+                        
+                        .tg-button-wrap {
+                            margin-left: 0 !important;
+                        }
+                        
+                        .btn {
+                            padding: 8px 16px !important;
+                            font-size: 14px !important;
+                        }
+                    }            
+                    
+                    
+/* Arrow styles */
+.btn.btn-primary.tg-svgs {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px;
+  padding: 14px 20px !important;
+  border: none !important;
+  border-radius: 4px !important;
+  background-color: #0b5ed7 !important;
+  color: white !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap !important;
+  min-width: 130px;
+  text-transform: none !important;
+  line-height: normal !important;
+}
+
+.svgs-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 20px;
+  position: relative;
+}
+
+.svgs-icons img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.btn.btn-primary.tg-svgs:hover .svgs-icons img {
+  transform: scaleX(0);
+  transform-origin: right center;
+  animation: drawArrow 0.3s ease-out forwards;
+}
+
+@keyframes drawArrow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.btn.btn-primary.tg-svgs:hover {
+  background-color: #00275B !important;
+}
 
 
+
+/* Container for newsletter page*/
+.contact-container {
+  display: flex;
+  justify-content: center;
+ 
+  min-height: auto;
+  font-family: Arial, sans-serif;
+  padding: 80px 320px 80px 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+/* Image Section */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  min-width: 300px;
+  opacity: 0;
+  transform: translateX(-90px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.image-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Image itself */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Form Section */
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1px;
+  min-width: 300px;
+}
+
+/* Heading */
+.form-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #002855;
+  margin-bottom: 10px;
+}
+
+/* Input Styles */
+.form-input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #0b5ed7;
+  outline: none;
+}
+
+.message-input {
+  min-height: 120px;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #0b5ed7;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 120px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  color: #fff;
+  background-color: #00275B;
+}
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px 15px;
+    flex-direction: column;
+    min-height: auto;
+    margin: 20px 0;
+  }
+
+  .contact-image {
+    order: 1;
+    margin-top: 20px;
+    transform: translateX(0);
+    opacity: 1;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-form {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  .form-heading {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .form-input {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 14px 24px;
+    margin-top: 5px;
+  }
+}
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
